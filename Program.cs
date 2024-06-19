@@ -1,12 +1,13 @@
-﻿using System;
+﻿﻿using System;
 using Personajes;
+using Creador;
 
-List<Personaje> personaje;
-public class FabricaDePersonajes{
+var personajes = new List<Personaje>();
 
+FabricaDePersonajes fab1 = new FabricaDePersonajes();
+Personaje personaje = new Personaje();
 
+personaje = fab1.cargarPersonaje();
+personajes.Add(personaje);
 
-    void cargarPersonaje(){
-        
-    }
-}
+Console.WriteLine(personaje.caracteristicas.Armadura);
