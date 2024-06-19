@@ -1,10 +1,10 @@
 namespace Personajes{
     public class Personaje{
-        Datos datos{get;set;}
-        Caracteristicas caracteristicas{get;set;}
+        public Datos datos{get;set;}
+        public Caracteristicas caracteristicas{get;set;}
     }
 
-    public class Datos{
+    public class Caracteristicas{
         private int velocidad;
         public int Velocidad{
             get => velocidad;
@@ -34,7 +34,7 @@ namespace Personajes{
 
     }
 
-    public class Caracteristicas{
+    public class Datos{
         public string Tipo;
         public string Nombre;
         public string Apodo;
