@@ -1,0 +1,15 @@
+c:\Users\santi\OneDrive\Desktop\ProyectoFinal\tl1-proyectofinal2024-OgaitnaSZ\bin\Debug\net8.0\ProyectoFinal.exe
+c:\Users\santi\OneDrive\Desktop\ProyectoFinal\tl1-proyectofinal2024-OgaitnaSZ\bin\Debug\net8.0\ProyectoFinal.deps.json
+c:\Users\santi\OneDrive\Desktop\ProyectoFinal\tl1-proyectofinal2024-OgaitnaSZ\bin\Debug\net8.0\ProyectoFinal.runtimeconfig.json
+c:\Users\santi\OneDrive\Desktop\ProyectoFinal\tl1-proyectofinal2024-OgaitnaSZ\bin\Debug\net8.0\ProyectoFinal.dll
+c:\Users\santi\OneDrive\Desktop\ProyectoFinal\tl1-proyectofinal2024-OgaitnaSZ\bin\Debug\net8.0\ProyectoFinal.pdb
+c:\Users\santi\OneDrive\Desktop\ProyectoFinal\tl1-proyectofinal2024-OgaitnaSZ\obj\Debug\net8.0\ProyectoFinal.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\santi\OneDrive\Desktop\ProyectoFinal\tl1-proyectofinal2024-OgaitnaSZ\obj\Debug\net8.0\ProyectoFinal.AssemblyInfoInputs.cache
+c:\Users\santi\OneDrive\Desktop\ProyectoFinal\tl1-proyectofinal2024-OgaitnaSZ\obj\Debug\net8.0\ProyectoFinal.AssemblyInfo.cs
+c:\Users\santi\OneDrive\Desktop\ProyectoFinal\tl1-proyectofinal2024-OgaitnaSZ\obj\Debug\net8.0\ProyectoFinal.csproj.CoreCompileInputs.cache
+c:\Users\santi\OneDrive\Desktop\ProyectoFinal\tl1-proyectofinal2024-OgaitnaSZ\obj\Debug\net8.0\ProyectoFinal.sourcelink.json
+c:\Users\santi\OneDrive\Desktop\ProyectoFinal\tl1-proyectofinal2024-OgaitnaSZ\obj\Debug\net8.0\ProyectoFinal.dll
+c:\Users\santi\OneDrive\Desktop\ProyectoFinal\tl1-proyectofinal2024-OgaitnaSZ\obj\Debug\net8.0\refint\ProyectoFinal.dll
+c:\Users\santi\OneDrive\Desktop\ProyectoFinal\tl1-proyectofinal2024-OgaitnaSZ\obj\Debug\net8.0\ProyectoFinal.pdb
+c:\Users\santi\OneDrive\Desktop\ProyectoFinal\tl1-proyectofinal2024-OgaitnaSZ\obj\Debug\net8.0\ProyectoFinal.genruntimeconfig.cache
+c:\Users\santi\OneDrive\Desktop\ProyectoFinal\tl1-proyectofinal2024-OgaitnaSZ\obj\Debug\net8.0\ref\ProyectoFinal.dll

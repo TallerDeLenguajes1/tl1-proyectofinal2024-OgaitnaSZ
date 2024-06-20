@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿using System;
 using Personajes;
 using Creador;
 
@@ -10,4 +10,3 @@ Personaje personaje = new Personaje();
 personaje = fab1.cargarPersonaje();
 personajes.Add(personaje);
 
-Console.WriteLine(personaje.caracteristicas.Armadura);
