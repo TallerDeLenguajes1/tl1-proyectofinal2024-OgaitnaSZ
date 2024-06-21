@@ -41,6 +41,41 @@ CARACTERISTICAS:
 }
 Console.WriteLine("Personajes cargados: "+personajes.Count);
 
+//Comenzar partida
+Console.WriteLine("Selecciones dos personajes para pelear");
+Personaje personaje1 = personajes[5];
+Personaje personaje2 = personajes[2];
+
+Random random = new Random();
+int turno = 0;
+int ataque;
+int efectividad;
+int defensa;
+int dmg;
+while(personaje1.caracteristicas.salud>0 || personaje2.caracteristicas.salud>0){
+    if(turno%2 == 0){
+        ataque = personaje1.caracteristicas.Destreza*personaje1.caracteristicas.Fuerza*personaje1.caracteristicas.Nivel;
+        efectividad = random.Next(1,100);
+        defensa = personaje2.caracteristicas.Armadura*personaje2.caracteristicas.Velocidad;
+        dmg = ((ataque*efectividad)-defensa)/500;
+        personaje2.caracteristicas.salud -= dmg;
+    }else{
+        ataque = personaje2.caracteristicas.Destreza*personaje2.caracteristicas.Fuerza*personaje2.caracteristicas.Nivel;
+        efectividad = random.Next(1,100);
+        defensa = personaje1.caracteristicas.Armadura*personaje1.caracteristicas.Velocidad;
+        dmg = ((ataque*efectividad)-defensa)/500;
+        personaje1.caracteristicas.salud -= dmg;
+    }
+    turno++;
+}
+if(personaje1.caracteristicas.salud>0){
+    Console.WriteLine("ganador 1");
+}
+if(personaje2.caracteristicas.salud>0){
+    Console.WriteLine("ganador 2");
+}
+
+
 
 // HistorialJson historial = new HistorialJson();
 // WinRate winRate = new WinRate();
