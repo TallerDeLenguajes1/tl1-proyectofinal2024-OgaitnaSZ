@@ -1,0 +1,90 @@
+[
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Elfa/o",
+        "Nombre": "ALFONSO ROBERTO ALEJANDRO",
+        "Apodo": "La Hija del Fuego",
+        "fechaNacimiento": "1851-01-10T00:00:00",
+        "Edad": 173
+      },
+      "caracteristicas": {
+        "Velocidad": 8,
+        "Destreza": 2,
+        "Fuerza": 4,
+        "Nivel": 7,
+        "Armadura": 9
+      }
+    },
+    "winrate": {
+      "victorias": 2,
+      "derrotas": 1
+    }
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Caballero",
+        "Nombre": "ACOSTA SALVADOR ALBERTO",
+        "Apodo": "La Reina de la Corte",
+        "fechaNacimiento": "2004-11-28T00:00:00",
+        "Edad": 20
+      },
+      "caracteristicas": {
+        "Velocidad": 7,
+        "Destreza": 3,
+        "Fuerza": 9,
+        "Nivel": 4,
+        "Armadura": 1
+      }
+    },
+    "winrate": {
+      "victorias": 2,
+      "derrotas": 1
+    }
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Elfa/o",
+        "Nombre": "AGUCERO MARIA SOLEDAD",
+        "Apodo": "El Rey del Invierno",
+        "fechaNacimiento": "1992-03-08T00:00:00",
+        "Edad": 32
+      },
+      "caracteristicas": {
+        "Velocidad": 6,
+        "Destreza": 1,
+        "Fuerza": 2,
+        "Nivel": 4,
+        "Armadura": 9
+      }
+    },
+    "winrate": {
+      "victorias": 2,
+      "derrotas": 1
+    }
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Humano",
+        "Nombre": "ACOGLANIS FACUNDO CRISPIN",
+        "Apodo": "La Llama",
+        "fechaNacimiento": "1921-05-17T00:00:00",
+        "Edad": 103
+      },
+      "caracteristicas": {
+        "Velocidad": 1,
+        "Destreza": 3,
+        "Fuerza": 5,
+        "Nivel": 9,
+        "Armadura": 4
+      }
+    },
+    "winrate": {
+      "victorias": 2,
+      "derrotas": 1
+    }
+  }
+]

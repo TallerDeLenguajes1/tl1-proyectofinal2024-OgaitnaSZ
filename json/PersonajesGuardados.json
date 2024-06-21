@@ -1,0 +1,50 @@
+[
+  {
+    "datos": {
+      "Tipo": "Humano",
+      "Nombre": "AGUILAR OSCAR ADRIAN",
+      "Apodo": "La Radiante",
+      "fechaNacimiento": "1993-04-02T00:00:00",
+      "Edad": 31
+    },
+    "caracteristicas": {
+      "Velocidad": 1,
+      "Destreza": 3,
+      "Fuerza": 9,
+      "Nivel": 8,
+      "Armadura": 6
+    }
+  },
+  {
+    "datos": {
+      "Tipo": "Caballero",
+      "Nombre": "ACEVEDO CLEMENTE DANIEL",
+      "Apodo": "El Sombra del Desierto",
+      "fechaNacimiento": "2018-06-13T00:00:00",
+      "Edad": 6
+    },
+    "caracteristicas": {
+      "Velocidad": 3,
+      "Destreza": 4,
+      "Fuerza": 8,
+      "Nivel": 8,
+      "Armadura": 3
+    }
+  },
+  {
+    "datos": {
+      "Tipo": "Humano",
+      "Nombre": "ACOGLANIS FACUNDO CRISPIN",
+      "Apodo": "La Llama",
+      "fechaNacimiento": "1921-05-17T00:00:00",
+      "Edad": 103
+    },
+    "caracteristicas": {
+      "Velocidad": 1,
+      "Destreza": 3,
+      "Fuerza": 5,
+      "Nivel": 9,
+      "Armadura": 4
+    }
+  }
+]
