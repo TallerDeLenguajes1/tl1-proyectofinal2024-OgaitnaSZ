@@ -6,17 +6,32 @@ using Rendimiento;
 namespace Historial{
     public class Partida{
         public Personaje personaje{get;set;}
-        public WinRate winrate{get;set;}
+        public int victorias{get;set;}
+        public DateTime fecha{get;set;}
     }
     public class HistorialJson{
-        public void GuardarGanador(Personaje personaje, WinRate winrate, string nombreArchivo){
+        public void GuardarGanador(Personaje personaje, string nombreArchivo){
             try{
-                List<Partida> historalCompleto = leerGanadores(nombreArchivo);
+                List<Partida> historalCompleto = new List<Partida>();
                 Partida partida = new Partida();
                 partida.personaje = personaje;
-                partida.winrate = winrate;
+                partida.victorias = 1;
+                partida.fecha = DateTime.Now;
+
+                if(existe("../../../json/"+nombreArchivo+".json")){
+                    historalCompleto = leerGanadores(nombreArchivo);
+                    string json = File.ReadAllText("../../../json/"+nombreArchivo+".json");
+                    if(json.Contains(partida.personaje.datos.Nombre)){
+                        for(int i=0 ; i<historalCompleto.Count() ; i++){
+                            if(historalCompleto[i].personaje.datos.Nombre == partida.personaje.datos.Nombre){
+                                partida.victorias++;
+                            }
+                        }
+                    }
+                }
+
                 historalCompleto.Add(partida);
-                string jsonString = JsonSerializer.Serialize(historalCompleto, new JsonSerializerOptions { WriteIndented = true });
+                string jsonString = JsonSerializer.Serialize(historalCompleto, new JsonSerializerOptions { WriteIndented = true});
                 File.WriteAllText("../../../json/"+nombreArchivo+".json", jsonString);
                 Console.WriteLine("Partida guardada correctamente");
             }catch{
@@ -26,7 +41,6 @@ namespace Historial{
 
         public List<Partida> leerGanadores(string nombreArchivo){
             string json = File.ReadAllText("../../../json/"+nombreArchivo+".json");
-            Console.WriteLine(json);
             var opciones = new JsonSerializerOptions{PropertyNameCaseInsensitive = true};
             return JsonSerializer.Deserialize<List<Partida>>(json, opciones);
         }

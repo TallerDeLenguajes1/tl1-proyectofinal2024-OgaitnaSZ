@@ -31,9 +31,10 @@ namespace Creador{
             caract.Nivel = random.Next(1,10);
             caract.Armadura = random.Next(1,10);
 
-            datos.Nombre = datosList[random.Next(datosList.Count)].nombre;
-            datos.Apodo = datosList[random.Next(datosList.Count)].apodo;
-            datos.Tipo = datosList[random.Next(datosList.Count)].tipo;
+            int pos = random.Next(datosList.Count);
+            datos.Nombre = datosList[pos].nombre;
+            datos.Apodo = datosList[pos].apodo;
+            datos.Tipo = datosList[pos].tipo;
 
             // Fecha de naciemiento y edad aleatorias
             datos.fechaNacimiento = new DateTime(random.Next(1724, 2024), random.Next(1, 13), random.Next(1, 29));
