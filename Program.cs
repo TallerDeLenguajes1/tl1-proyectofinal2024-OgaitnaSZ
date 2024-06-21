@@ -7,35 +7,46 @@ using Rendimiento;
 
 var personajes = new List<Personaje>();
 
-FabricaDePersonajes fab1 = new FabricaDePersonajes();
-Personaje personaje = new Personaje();
-
-for(int i=0 ; i<3 ; i++){
-    personaje = fab1.cargarPersonaje();
-    personajes.Add(personaje);
-}
-
-PersonajesJson guardar = new PersonajesJson();
-guardar.guardarPersonajes(personajes,"PersonajesGuardados");
-
-var personajesCargados = new List<Personaje>();
-personajesCargados = guardar.leerPersonajes("PersonajesGuardados");
-Console.WriteLine(personajesCargados.Count);
-
-if(guardar.existe("../../../a.txt")){
-    Console.WriteLine("existe");
+//Verificar si existen personajes
+PersonajesJson gestion = new PersonajesJson();
+if(gestion.existe("../../../json/PersonajesGuardados.json")){
+    Console.WriteLine("Si");
+    personajes = gestion.leerPersonajes("PersonajesGuardados");
 }else{
-    Console.WriteLine("NO");
+    for(int i=0 ; i<10 ; i++){
+        Personaje personaje = new Personaje();
+        FabricaDePersonajes fabrica = new FabricaDePersonajes();
+        personaje = fabrica.cargarPersonaje();
+        personajes.Add(personaje);
+    }
+    gestion.guardarPersonajes(personajes,"PersonajesGuardados");
+    personajes = gestion.leerPersonajes("PersonajesGuardados");
 }
+Console.WriteLine("Personajes Cargados:");
+foreach(Personaje personaje in personajes){
+    string datosPersonajes = $@" PERSONAJE {personajes}
+DATOS:
+    {personaje.datos.Nombre}, {personaje.datos.Apodo},
+    Tipo: {personaje.datos.Tipo}
+    Edad: {personaje.datos.Edad}
+    Fecha de nacimiento: {personaje.datos.fechaNacimiento.ToShortDateString()}
+CARACTERISTICAS:
+    Velocidad: {personaje.caracteristicas.Velocidad}
+    Destreza: {personaje.caracteristicas.Destreza}
+    Fuerza: {personaje.caracteristicas.Fuerza}
+    Nivel: {personaje.caracteristicas.Nivel}
+    Armadura: {personaje.caracteristicas.Armadura}
+------------------------------------------------------------";
+    Console.WriteLine(datosPersonajes);
+}
+Console.WriteLine("Personajes cargados: "+personajes.Count);
 
 
-HistorialJson historial = new HistorialJson();
-WinRate winRate = new WinRate();
-winRate.victorias = 2;
-winRate.derrotas = 1;
+// HistorialJson historial = new HistorialJson();
+// WinRate winRate = new WinRate();
+// winRate.victorias = 2;
+// winRate.derrotas = 1;
 
-historial.GuardarGanador(personaje, winRate,"Historial" );
-
-var partidaCargada = new List<Partida>();
-partidaCargada =  historial.leerGanadores("Historial");
-Console.WriteLine(partidaCargada);
+// var partidaCargada = new List<Partida>();
+// partidaCargada =  historial.leerGanadores("Historial");
+// Console.WriteLine(partidaCargada);

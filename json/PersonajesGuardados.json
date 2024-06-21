@@ -1,49 +1,161 @@
 [
   {
     "datos": {
-      "Tipo": "Humano",
-      "Nombre": "AGUILAR OSCAR ADRIAN",
-      "Apodo": "La Radiante",
-      "fechaNacimiento": "1993-04-02T00:00:00",
-      "Edad": 31
+      "Tipo": "Espectro",
+      "Nombre": "ALESSO MYRIAM MARIA ALCIRA",
+      "Apodo": "La Iluminada",
+      "fechaNacimiento": "1950-05-09T00:00:00",
+      "Edad": 74
     },
     "caracteristicas": {
-      "Velocidad": 1,
-      "Destreza": 3,
-      "Fuerza": 9,
-      "Nivel": 8,
-      "Armadura": 6
-    }
-  },
-  {
-    "datos": {
-      "Tipo": "Caballero",
-      "Nombre": "ACEVEDO CLEMENTE DANIEL",
-      "Apodo": "El Sombra del Desierto",
-      "fechaNacimiento": "2018-06-13T00:00:00",
-      "Edad": 6
-    },
-    "caracteristicas": {
-      "Velocidad": 3,
-      "Destreza": 4,
-      "Fuerza": 8,
-      "Nivel": 8,
+      "Velocidad": 7,
+      "Destreza": 2,
+      "Fuerza": 6,
+      "Nivel": 4,
       "Armadura": 3
     }
   },
   {
     "datos": {
-      "Tipo": "Humano",
-      "Nombre": "ACOGLANIS FACUNDO CRISPIN",
-      "Apodo": "La Llama",
-      "fechaNacimiento": "1921-05-17T00:00:00",
-      "Edad": 103
+      "Tipo": "Caballero",
+      "Nombre": "ABUSAP JORGE",
+      "Apodo": "La Estrella Polar",
+      "fechaNacimiento": "1881-04-18T00:00:00",
+      "Edad": 143
     },
     "caracteristicas": {
-      "Velocidad": 1,
+      "Velocidad": 2,
       "Destreza": 3,
+      "Fuerza": 4,
+      "Nivel": 5,
+      "Armadura": 2
+    }
+  },
+  {
+    "datos": {
+      "Tipo": "Espectro",
+      "Nombre": "ABRAHIN DE SALLENAVE ANA ",
+      "Apodo": "El Mago Errante",
+      "fechaNacimiento": "2018-08-09T00:00:00",
+      "Edad": 6
+    },
+    "caracteristicas": {
+      "Velocidad": 7,
+      "Destreza": 4,
+      "Fuerza": 7,
+      "Nivel": 8,
+      "Armadura": 1
+    }
+  },
+  {
+    "datos": {
+      "Tipo": "Humano",
+      "Nombre": "AG\u00DCERO MARIA CRISTINA",
+      "Apodo": "La Alquimista",
+      "fechaNacimiento": "2002-05-07T00:00:00",
+      "Edad": 22
+    },
+    "caracteristicas": {
+      "Velocidad": 8,
+      "Destreza": 1,
       "Fuerza": 5,
+      "Nivel": 1,
+      "Armadura": 4
+    }
+  },
+  {
+    "datos": {
+      "Tipo": "Guerrero",
+      "Nombre": "ADOLFO CLAUDIO MARTIN",
+      "Apodo": "La Secreta",
+      "fechaNacimiento": "1731-04-13T00:00:00",
+      "Edad": 293
+    },
+    "caracteristicas": {
+      "Velocidad": 7,
+      "Destreza": 2,
+      "Fuerza": 1,
+      "Nivel": 3,
+      "Armadura": 9
+    }
+  },
+  {
+    "datos": {
+      "Tipo": "Humano",
+      "Nombre": "AINARDI VICTOR HUGO",
+      "Apodo": "El L\u00EDder de los Cazadores",
+      "fechaNacimiento": "1845-09-22T00:00:00",
+      "Edad": 179
+    },
+    "caracteristicas": {
+      "Velocidad": 7,
+      "Destreza": 1,
+      "Fuerza": 9,
+      "Nivel": 7,
+      "Armadura": 5
+    }
+  },
+  {
+    "datos": {
+      "Tipo": "Caballero",
+      "Nombre": "ALBARCE MORALES PABLO ",
+      "Apodo": "El Vengador",
+      "fechaNacimiento": "1822-05-10T00:00:00",
+      "Edad": 202
+    },
+    "caracteristicas": {
+      "Velocidad": 3,
+      "Destreza": 4,
+      "Fuerza": 3,
+      "Nivel": 4,
+      "Armadura": 8
+    }
+  },
+  {
+    "datos": {
+      "Tipo": "Humano",
+      "Nombre": "ALEN LASCANO LUIS CELESTINO",
+      "Apodo": "El Campe\u00F3n de los Sue\u00F1os",
+      "fechaNacimiento": "1733-07-09T00:00:00",
+      "Edad": 291
+    },
+    "caracteristicas": {
+      "Velocidad": 9,
+      "Destreza": 2,
+      "Fuerza": 6,
+      "Nivel": 4,
+      "Armadura": 5
+    }
+  },
+  {
+    "datos": {
+      "Tipo": "Elfa/o",
+      "Nombre": "AGUILAR SUSANA ALEJANDRA",
+      "Apodo": "El Veloz",
+      "fechaNacimiento": "1995-05-21T00:00:00",
+      "Edad": 29
+    },
+    "caracteristicas": {
+      "Velocidad": 8,
+      "Destreza": 4,
+      "Fuerza": 8,
       "Nivel": 9,
+      "Armadura": 8
+    }
+  },
+  {
+    "datos": {
+      "Tipo": "Guerrero",
+      "Nombre": "ALCARAZ JUAN PABLO",
+      "Apodo": "El Mago Errante",
+      "fechaNacimiento": "1784-12-20T00:00:00",
+      "Edad": 240
+    },
+    "caracteristicas": {
+      "Velocidad": 8,
+      "Destreza": 2,
+      "Fuerza": 4,
+      "Nivel": 5,
       "Armadura": 4
     }
   }
