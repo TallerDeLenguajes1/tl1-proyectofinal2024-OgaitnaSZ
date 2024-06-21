@@ -30,7 +30,6 @@ namespace Creador{
             caract.Fuerza = random.Next(1,10);
             caract.Nivel = random.Next(1,10);
             caract.Armadura = random.Next(1,10);
-            caract.salud = 100;
 
             datos.Nombre = datosList[random.Next(datosList.Count)].nombre;
             datos.Apodo = datosList[random.Next(datosList.Count)].apodo;

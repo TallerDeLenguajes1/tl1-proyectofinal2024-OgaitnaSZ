@@ -86,5 +86,27 @@
       "victorias": 2,
       "derrotas": 1
     }
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Elfa/o",
+        "Nombre": "AGUILAR SUSANA ALEJANDRA",
+        "Apodo": "El Veloz",
+        "fechaNacimiento": "1995-05-21T00:00:00",
+        "Edad": 29
+      },
+      "caracteristicas": {
+        "Velocidad": 8,
+        "Destreza": 4,
+        "Fuerza": 8,
+        "Nivel": 9,
+        "Armadura": 10
+      }
+    },
+    "winrate": {
+      "victorias": 2,
+      "derrotas": 1
+    }
   }
 ]
