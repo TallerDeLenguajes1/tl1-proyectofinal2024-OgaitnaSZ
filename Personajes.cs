@@ -35,10 +35,10 @@ namespace Personajes{
     }
 
     public class Datos{
-        public string Tipo;
-        public string Nombre;
-        public string Apodo;
-        public DateTime fechaNacimiento;
-        public int Edad;
+        public string Tipo{get;set;}
+        public string Nombre{get;set;}
+        public string Apodo{get;set;}
+        public DateTime fechaNacimiento{get;set;}
+        public int Edad{get;set;}
     }
 }

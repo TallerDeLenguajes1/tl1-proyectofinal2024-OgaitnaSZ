@@ -13,7 +13,7 @@ namespace Creador{
     public class FabricaDePersonajes{
         Random random = new Random();
         public Personaje cargarPersonaje(){
-            string json = File.ReadAllText("../../../nombresyapodos.json");
+            string json = File.ReadAllText("../../../json/nombresyapodos.json");
 
             var opciones = new JsonSerializerOptions{
                 PropertyNameCaseInsensitive = true

@@ -1,0 +1,50 @@
+[
+  {
+    "datos": {
+      "Tipo": "Caballero",
+      "Nombre": "ABRAZIAN ALFREDO PASCUAL",
+      "Apodo": "El Lobo Solitario",
+      "fechaNacimiento": "1954-10-13T00:00:00",
+      "Edad": 70
+    },
+    "caracteristicas": {
+      "Velocidad": 2,
+      "Destreza": 3,
+      "Fuerza": 8,
+      "Nivel": 5,
+      "Armadura": 7
+    }
+  },
+  {
+    "datos": {
+      "Tipo": "Humano",
+      "Nombre": "ABRELIANO ENRIQUE ROLANDO",
+      "Apodo": "El Forjador",
+      "fechaNacimiento": "1921-01-28T00:00:00",
+      "Edad": 103
+    },
+    "caracteristicas": {
+      "Velocidad": 3,
+      "Destreza": 4,
+      "Fuerza": 6,
+      "Nivel": 4,
+      "Armadura": 8
+    }
+  },
+  {
+    "datos": {
+      "Tipo": "Humano",
+      "Nombre": "ACEVEDO ANALIA ITATI",
+      "Apodo": "El Constructor de Sue\u00F1os",
+      "fechaNacimiento": "1948-07-18T00:00:00",
+      "Edad": 76
+    },
+    "caracteristicas": {
+      "Velocidad": 7,
+      "Destreza": 3,
+      "Fuerza": 1,
+      "Nivel": 1,
+      "Armadura": 7
+    }
+  }
+]
