@@ -18,7 +18,7 @@ namespace GestionPersonajes{
             }
         }
         public List<Personaje> leerPersonajes(string nombreArchivo){
-            string json = File.ReadAllText("../../../"+nombreArchivo+".json");
+            string json = File.ReadAllText("../../../json/"+nombreArchivo+".json");
             var opciones = new JsonSerializerOptions{PropertyNameCaseInsensitive = true};
             return JsonSerializer.Deserialize<List<Personaje>>(json, opciones);
         }
