@@ -14,25 +14,21 @@ namespace Creador{
         Random random = new Random();
         public Personaje cargarPersonaje(){
             string json = File.ReadAllText("../../../json/nombresyapodos.json");
-
-            var opciones = new JsonSerializerOptions{
-                PropertyNameCaseInsensitive = true
-            };
-
+            var opciones = new JsonSerializerOptions{PropertyNameCaseInsensitive = true};
             List<Identidad> datosList = JsonSerializer.Deserialize<List<Identidad>>(json, opciones);
 
             Personaje personaje = new Personaje();
             Datos datos = new Datos();
-            Caracteristicas caract = new Caracteristicas();
+            Caracteristicas caracteristicas = new Caracteristicas();
 
-            caract.Velocidad = random.Next(1,10);
-            caract.Destreza = random.Next(1,5);
-            caract.Fuerza = random.Next(1,10);
-            caract.Nivel = random.Next(1,10);
-            caract.Armadura = random.Next(1,10);
+            caracteristicas.Velocidad = random.Next(1,10);
+            caracteristicas.Destreza = random.Next(1,5);
+            caracteristicas.Fuerza = random.Next(1,10);
+            caracteristicas.Nivel = random.Next(1,10);
+            caracteristicas.Armadura = random.Next(1,10);
 
-            int pos = random.Next(datosList.Count);
-            datos.Nombre = datosList[pos].nombre;
+            int pos = random.Next(datosList.Count);  //Elijo un nombre, apodo y tipo de la lista
+            datos.Nombre = datosList[pos].nombre;    
             datos.Apodo = datosList[pos].apodo;
             datos.Tipo = datosList[pos].tipo;
 
@@ -42,7 +38,7 @@ namespace Creador{
 
             //Asignacion de valores
             personaje.datos = datos;
-            personaje.caracteristicas = caract;
+            personaje.caracteristicas = caracteristicas;
             return personaje;
         }
     }

@@ -1,7 +1,6 @@
 using System;
 using System.Text.Json;
 using Personajes;
-using Rendimiento;
 
 namespace Historial{
     public class Partida{
@@ -18,13 +17,13 @@ namespace Historial{
                 partida.victorias = 1;
                 partida.fecha = DateTime.Now;
 
-                if(existe("../../../json/"+nombreArchivo+".json")){
-                    historalCompleto = leerGanadores(nombreArchivo);
+                if(existe("../../../json/"+nombreArchivo+".json")){   //Revisamos si existen mas ganadores
+                    historalCompleto = leerGanadores(nombreArchivo);   //Si existe, los cargamos en una lista
                     string json = File.ReadAllText("../../../json/"+nombreArchivo+".json");
-                    if(json.Contains(partida.personaje.datos.Nombre)){
+                    if(json.Contains(partida.personaje.datos.Nombre)){    //Revisamos si este personaje ya gano alguna vez
                         for(int i=0 ; i<historalCompleto.Count() ; i++){
                             if(historalCompleto[i].personaje.datos.Nombre == partida.personaje.datos.Nombre){
-                                partida.victorias++;
+                                partida.victorias++;     //Sumamos sus victorias
                             }
                         }
                     }

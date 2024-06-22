@@ -3,14 +3,12 @@ using Personajes;
 using Creador;
 using GestionPersonajes;
 using Historial;
-using Rendimiento;
 
-var personajes = new List<Personaje>();
+var personajes = new List<Personaje>();  //Lista de personajes
 
 //Verificar si existen personajes
 PersonajesJson gestion = new PersonajesJson();
 if(gestion.existe("../../../json/PersonajesGuardados.json")){
-    Console.WriteLine("Si");
     personajes = gestion.leerPersonajes("PersonajesGuardados");
 }else{
     for(int i=0 ; i<10 ; i++){
@@ -23,11 +21,10 @@ if(gestion.existe("../../../json/PersonajesGuardados.json")){
         personajes.Add(personaje);
     }
     gestion.guardarPersonajes(personajes,"PersonajesGuardados");
-    personajes = gestion.leerPersonajes("PersonajesGuardados");
 }
 Console.WriteLine("Personajes Cargados:");
 foreach(Personaje personaje in personajes){
-    string datosPersonajes = $@" PERSONAJE {personajes}
+    string datosPersonajes = $@"
 DATOS:
     {personaje.datos.Nombre}, {personaje.datos.Apodo},
     Tipo: {personaje.datos.Tipo}
@@ -46,18 +43,17 @@ Console.WriteLine("Personajes cargados: "+personajes.Count);
 
 //Comenzar partida
 Console.WriteLine("----- Comienza el torneo -----");
-int saludTemp = 100;
 int ronda = 1;
-while(personajes.Count()>1){
+while(personajes.Count()>1){         //Mientras haya mas de un personaje en pie...
     Random random = new Random();
-    int p1;
-    int p2;
+    int pos1;
+    int pos2;
     do{
-        p1 = random.Next(personajes.Count());
-        p2 = random.Next(personajes.Count());
-    } while (p1 == p2);
-    Personaje personaje1 = personajes[p1];
-    Personaje personaje2 = personajes[p2];
+        pos1 = random.Next(personajes.Count());
+        pos2 = random.Next(personajes.Count());
+    } while (pos1 == pos2);
+    Personaje personaje1 = personajes[pos1];     //Personajes aleatorios
+    Personaje personaje2 = personajes[pos2];
     Console.WriteLine("\nRonda "+ ronda +": "+ personaje1.datos.Nombre+" VS "+personaje2.datos.Nombre);
 
     int turno = 0;
@@ -84,7 +80,6 @@ while(personajes.Count()>1){
     }
     while(personaje1.caracteristicas.salud>0 && personaje2.caracteristicas.salud>0);
     if(personaje1.caracteristicas.salud>personaje2.caracteristicas.salud){
-        saludTemp = personaje1.caracteristicas.salud;
         Console.WriteLine(personaje1.datos.Nombre+" es el vencedor!");
         Console.WriteLine(personaje2.datos.Nombre+" queda fuera");
         personajes.Remove(personaje2);
@@ -97,7 +92,6 @@ while(personajes.Count()>1){
             Console.WriteLine("+10 de armadura para "+personaje1.datos.Nombre); 
         }
     }else{
-            saludTemp = personaje2.caracteristicas.salud;
             Console.WriteLine(personaje2.datos.Nombre+" es el vencedor!");
             Console.WriteLine(personaje1.datos.Nombre+" queda fuera");
             personajes.Remove(personaje1);
@@ -124,10 +118,9 @@ CARACTERISTICAS:
     Fuerza: {personajes[0].caracteristicas.Fuerza}
     Nivel: {personajes[0].caracteristicas.Nivel}
     Armadura: {personajes[0].caracteristicas.Armadura}
-Finalizo con {saludTemp} de salud
 ------------------------------------------------------------";
 Console.WriteLine(datosGanador);
 
+//Guardar datos de ganador en el historial
 HistorialJson historial = new HistorialJson();
-
 historial.GuardarGanador(personajes[0],"Historial");

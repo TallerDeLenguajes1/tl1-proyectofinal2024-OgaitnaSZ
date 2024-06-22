@@ -2,10 +2,6 @@ using System;
 using System.Text.Json;
 using Personajes;
 
-public class Root{
-    public Personaje personaje{get;set;}
-}
-
 namespace GestionPersonajes{
     public class PersonajesJson{
         public void guardarPersonajes(List<Personaje> personaje, string nombreArchivo){

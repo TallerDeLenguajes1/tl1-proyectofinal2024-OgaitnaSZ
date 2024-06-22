@@ -118,5 +118,25 @@
     },
     "victorias": 1,
     "fecha": "2024-06-21T20:56:24.1914285-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Yordle",
+        "Nombre": "Corki",
+        "Apodo": "el Bombardero Osado",
+        "fechaNacimiento": "1729-09-01T00:00:00",
+        "Edad": 295
+      },
+      "caracteristicas": {
+        "Velocidad": 6,
+        "Destreza": 2,
+        "Fuerza": 9,
+        "Nivel": 6,
+        "Armadura": 10
+      }
+    },
+    "victorias": 1,
+    "fecha": "2024-06-21T21:43:22.7784776-03:00"
   }
 ]
