@@ -1,0 +1,162 @@
+[
+  {
+    "datos": {
+      "Tipo": "Vastaya",
+      "Nombre": "Sett",
+      "Apodo": "el Jefe",
+      "fechaNacimiento": "1782-11-20T00:00:00",
+      "Edad": 242
+    },
+    "caracteristicas": {
+      "Velocidad": 5,
+      "Destreza": 2,
+      "Fuerza": 5,
+      "Nivel": 1,
+      "Armadura": 3
+    }
+  },
+  {
+    "datos": {
+      "Tipo": "Humano",
+      "Nombre": "Vi",
+      "Apodo": "la Vigilante de Piltover",
+      "fechaNacimiento": "1909-06-08T00:00:00",
+      "Edad": 115
+    },
+    "caracteristicas": {
+      "Velocidad": 2,
+      "Destreza": 1,
+      "Fuerza": 7,
+      "Nivel": 3,
+      "Armadura": 6
+    }
+  },
+  {
+    "datos": {
+      "Tipo": "Esp\u00EDritu",
+      "Nombre": "Bard",
+      "Apodo": "el Guardi\u00E1n Errante",
+      "fechaNacimiento": "2014-01-02T00:00:00",
+      "Edad": 10
+    },
+    "caracteristicas": {
+      "Velocidad": 1,
+      "Destreza": 4,
+      "Fuerza": 5,
+      "Nivel": 5,
+      "Armadura": 4
+    }
+  },
+  {
+    "datos": {
+      "Tipo": "Humano",
+      "Nombre": "Nidalee",
+      "Apodo": "la Cazadora Bestial",
+      "fechaNacimiento": "1950-08-10T00:00:00",
+      "Edad": 74
+    },
+    "caracteristicas": {
+      "Velocidad": 8,
+      "Destreza": 2,
+      "Fuerza": 6,
+      "Nivel": 9,
+      "Armadura": 7
+    }
+  },
+  {
+    "datos": {
+      "Tipo": "H\u00EDbrido",
+      "Nombre": "Shyvana",
+      "Apodo": "la H\u00EDbrida de Drag\u00F3n",
+      "fechaNacimiento": "1981-12-21T00:00:00",
+      "Edad": 43
+    },
+    "caracteristicas": {
+      "Velocidad": 1,
+      "Destreza": 3,
+      "Fuerza": 7,
+      "Nivel": 6,
+      "Armadura": 1
+    }
+  },
+  {
+    "datos": {
+      "Tipo": "Golem",
+      "Nombre": "Blitzcrank",
+      "Apodo": "el Gran G\u00F3lem de Vapor",
+      "fechaNacimiento": "1765-10-10T00:00:00",
+      "Edad": 259
+    },
+    "caracteristicas": {
+      "Velocidad": 5,
+      "Destreza": 3,
+      "Fuerza": 3,
+      "Nivel": 2,
+      "Armadura": 4
+    }
+  },
+  {
+    "datos": {
+      "Tipo": "Yordle",
+      "Nombre": "Corki",
+      "Apodo": "el Bombardero Osado",
+      "fechaNacimiento": "1729-09-01T00:00:00",
+      "Edad": 295
+    },
+    "caracteristicas": {
+      "Velocidad": 6,
+      "Destreza": 2,
+      "Fuerza": 9,
+      "Nivel": 6,
+      "Armadura": 2
+    }
+  },
+  {
+    "datos": {
+      "Tipo": "Humano",
+      "Nombre": "Akali",
+      "Apodo": "la Asesina Furtiva",
+      "fechaNacimiento": "1736-12-23T00:00:00",
+      "Edad": 288
+    },
+    "caracteristicas": {
+      "Velocidad": 2,
+      "Destreza": 4,
+      "Fuerza": 6,
+      "Nivel": 6,
+      "Armadura": 3
+    }
+  },
+  {
+    "datos": {
+      "Tipo": "Esp\u00EDritu",
+      "Nombre": "Lillia",
+      "Apodo": "la Flor T\u00EDmida",
+      "fechaNacimiento": "1860-03-13T00:00:00",
+      "Edad": 164
+    },
+    "caracteristicas": {
+      "Velocidad": 3,
+      "Destreza": 4,
+      "Fuerza": 3,
+      "Nivel": 3,
+      "Armadura": 1
+    }
+  },
+  {
+    "datos": {
+      "Tipo": "Darkin",
+      "Nombre": "Varus",
+      "Apodo": "la Flecha de la Venganza",
+      "fechaNacimiento": "1827-10-26T00:00:00",
+      "Edad": 197
+    },
+    "caracteristicas": {
+      "Velocidad": 6,
+      "Destreza": 4,
+      "Fuerza": 6,
+      "Nivel": 8,
+      "Armadura": 9
+    }
+  }
+]

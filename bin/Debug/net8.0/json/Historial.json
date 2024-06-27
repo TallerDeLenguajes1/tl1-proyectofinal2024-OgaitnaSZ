@@ -198,5 +198,25 @@
     },
     "victorias": 3,
     "fecha": "2024-06-25T12:44:00.9718327-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Humano",
+        "Nombre": "Akali",
+        "Apodo": "la Asesina Furtiva",
+        "fechaNacimiento": "1736-12-23T00:00:00",
+        "Edad": 288
+      },
+      "caracteristicas": {
+        "Velocidad": 2,
+        "Destreza": 4,
+        "Fuerza": 6,
+        "Nivel": 6,
+        "Armadura": 10
+      }
+    },
+    "victorias": 2,
+    "fecha": "2024-06-25T13:36:47.708859-03:00"
   }
 ]

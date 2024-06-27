@@ -17,9 +17,9 @@ namespace Historial{
                 partida.victorias = 1;
                 partida.fecha = DateTime.Now;
 
-                if(existe("../../../json/"+nombreArchivo+".json")){   //Revisamos si existen mas ganadores
+                if(existe("json/"+nombreArchivo+".json")){   //Revisamos si existen mas ganadores
                     historalCompleto = leerGanadores(nombreArchivo);   //Si existe, los cargamos en una lista
-                    string json = File.ReadAllText("../../../json/"+nombreArchivo+".json");
+                    string json = File.ReadAllText("json/"+nombreArchivo+".json");
                     if(json.Contains(partida.personaje.datos.Nombre)){    //Revisamos si este personaje ya gano alguna vez
                         for(int i=0 ; i<historalCompleto.Count() ; i++){
                             if(historalCompleto[i].personaje.datos.Nombre == partida.personaje.datos.Nombre){
@@ -31,7 +31,7 @@ namespace Historial{
 
                 historalCompleto.Add(partida);
                 string jsonString = JsonSerializer.Serialize(historalCompleto, new JsonSerializerOptions { WriteIndented = true});
-                File.WriteAllText("../../../json/"+nombreArchivo+".json", jsonString);
+                File.WriteAllText("json/"+nombreArchivo+".json", jsonString);
                 Console.WriteLine("Partida guardada correctamente");
             }catch{
                 Console.WriteLine("No se pudo guardar la partida");
@@ -39,7 +39,7 @@ namespace Historial{
         }
 
         public List<Partida> leerGanadores(string nombreArchivo){
-            string json = File.ReadAllText("../../../json/"+nombreArchivo+".json");
+            string json = File.ReadAllText("json/"+nombreArchivo+".json");
             var opciones = new JsonSerializerOptions{PropertyNameCaseInsensitive = true};
             return JsonSerializer.Deserialize<List<Partida>>(json, opciones);
         }
