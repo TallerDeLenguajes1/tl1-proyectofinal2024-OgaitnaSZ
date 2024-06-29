@@ -31,6 +31,10 @@ namespace Personajes{
             set => armadura = value;
         }
         public int salud;
+        //Agregados
+        public int dmgInfligido;
+        public int dmgRecibido;
+        public int turnosJugados;
 
     }
 

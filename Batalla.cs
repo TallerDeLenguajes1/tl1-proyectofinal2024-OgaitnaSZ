@@ -18,56 +18,54 @@ namespace Batalla{
                 Console.WriteLine("\nRonda "+ ronda +": "+ personaje1.datos.Nombre+" VS "+personaje2.datos.Nombre);
 
                 int turno = 0;
-                int ataque;
-                int efectividad;
-                int defensa;
-                int dmg;
-                
                 do{
                     if(turno%2 == 0){
-                        ataque = personaje1.caracteristicas.Destreza*personaje1.caracteristicas.Fuerza*personaje1.caracteristicas.Nivel;
-                        efectividad = random.Next(1,100);
-                        defensa = personaje2.caracteristicas.Armadura*personaje2.caracteristicas.Velocidad;
-                        dmg = ((ataque*efectividad)-defensa)/500;
-                        personaje2.caracteristicas.salud -= dmg;
+                        atacar(personaje1,personaje2);
                     }else{
-                        ataque = personaje2.caracteristicas.Destreza*personaje2.caracteristicas.Fuerza*personaje2.caracteristicas.Nivel;
-                        efectividad = random.Next(1,100);
-                        defensa = personaje1.caracteristicas.Armadura*personaje1.caracteristicas.Velocidad;
-                        dmg = ((ataque*efectividad)-defensa)/500;
-                        personaje1.caracteristicas.salud -= dmg;
+                        atacar(personaje2,personaje1);
                     }
                     turno++;
-                }
-                while(personaje1.caracteristicas.salud>0 && personaje2.caracteristicas.salud>0);
+                }while(personaje1.caracteristicas.salud>0 && personaje2.caracteristicas.salud>0);
+                
+                //Comprobar ganador
                 if(personaje1.caracteristicas.salud>personaje2.caracteristicas.salud){
-                    Console.WriteLine(personaje1.datos.Nombre+" es el vencedor!");
-                    Console.WriteLine(personaje2.datos.Nombre+" queda fuera");
-                    personajes.Remove(personaje2);
-                    if(random.Next()%2==0){
-                        personaje1.caracteristicas.salud = 110;
-                        Console.WriteLine("+10 de salud para "+personaje1.datos.Nombre);
-                    }else{
-                        personaje1.caracteristicas.Armadura =+ 10;
-                        personaje1.caracteristicas.salud = 100;
-                        Console.WriteLine("+10 de armadura para "+personaje1.datos.Nombre); 
-                    }
+                    publicarGanador(personaje1, personaje2, personajes);
                 }else{
-                        Console.WriteLine(personaje2.datos.Nombre+" es el vencedor!");
-                        Console.WriteLine(personaje1.datos.Nombre+" queda fuera");
-                        personajes.Remove(personaje1);
-                    if(random.Next()%2==0){
-                        personaje2.caracteristicas.salud = 110;
-                        Console.WriteLine("+10 de salud para "+personaje2.datos.Nombre);
-                    }else{
-                        personaje2.caracteristicas.Armadura =+ 10;
-                        personaje2.caracteristicas.salud = 100;
-                        Console.WriteLine("+10 de armadura para "+personaje2.datos.Nombre); 
-                    }
+                    publicarGanador(personaje2, personaje1, personajes);
                 }
                 ronda++;
             }
             return personajes[0];
+        }
+        public void atacar(Personaje personaje1, Personaje personaje2){
+            Random random = new Random();
+            int ataque;
+            int efectividad;
+            int defensa;
+            int dmg;
+            ataque = personaje1.caracteristicas.Destreza*personaje1.caracteristicas.Fuerza*personaje1.caracteristicas.Nivel;
+            efectividad = random.Next(1,100);
+            defensa = personaje2.caracteristicas.Armadura*personaje2.caracteristicas.Velocidad;
+            dmg = ((ataque*efectividad)-defensa)/500;
+            personaje1.caracteristicas.dmgInfligido += dmg;
+            personaje2.caracteristicas.dmgRecibido += dmg;
+            personaje2.caracteristicas.salud -= dmg;
+            personaje1.caracteristicas.turnosJugados++;
+            personaje2.caracteristicas.turnosJugados++;
+        }
+        public void publicarGanador(Personaje personaje1, Personaje personaje2, List<Personaje> personajes){
+            Random random = new Random();
+            Console.WriteLine(personaje1.datos.Nombre+" es el vencedor!");
+            Console.WriteLine(personaje2.datos.Nombre+" queda fuera");
+            personajes.Remove(personaje2);
+            if(random.Next()%2==0){
+                personaje1.caracteristicas.salud = 110;
+                Console.WriteLine("+10 de salud para "+personaje1.datos.Nombre);
+            }else{
+                personaje1.caracteristicas.Armadura =+ 10;
+                personaje1.caracteristicas.salud = 100;
+                Console.WriteLine("+10 de armadura para "+personaje1.datos.Nombre); 
+            }
         }
     }
 }

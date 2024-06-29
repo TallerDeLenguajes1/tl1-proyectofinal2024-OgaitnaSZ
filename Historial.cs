@@ -6,6 +6,10 @@ namespace Historial{
     public class Partida{
         public Personaje personaje{get;set;}
         public int victorias{get;set;}
+        public int dmgInfligido{get;set;}
+        public int dmgRecibido{get;set;}
+        public float ratioDeDmg{get;set;}
+        public float dmgPromedioPorTurno{get;set;}
         public DateTime fecha{get;set;}
     }
     public class HistorialJson{
@@ -15,6 +19,10 @@ namespace Historial{
                 Partida partida = new Partida();
                 partida.personaje = personaje;
                 partida.victorias = 1;
+                partida.dmgInfligido= personaje.caracteristicas.dmgInfligido;
+                partida.dmgRecibido = personaje.caracteristicas.dmgRecibido;
+                partida.ratioDeDmg = partida.dmgInfligido/partida.dmgRecibido;
+                partida.dmgPromedioPorTurno = partida.dmgInfligido/personaje.caracteristicas.turnosJugados;
                 partida.fecha = DateTime.Now;
 
                 if(existe("json/"+nombreArchivo+".json")){   //Revisamos si existen mas ganadores
