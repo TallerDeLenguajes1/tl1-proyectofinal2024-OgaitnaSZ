@@ -70,5 +70,173 @@
     "ratioDeDmg": 1,
     "dmgPromedioPorTurno": 6,
     "fecha": "2024-06-29T02:15:21.3924409-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Darkin",
+        "Nombre": "Varus",
+        "Apodo": "la Flecha de la Venganza",
+        "fechaNacimiento": "1827-10-26T00:00:00",
+        "Edad": 197
+      },
+      "caracteristicas": {
+        "Velocidad": 6,
+        "Destreza": 4,
+        "Fuerza": 6,
+        "Nivel": 8,
+        "Armadura": 10
+      }
+    },
+    "victorias": 1,
+    "dmgInfligido": 232,
+    "dmgRecibido": 137,
+    "ratioDeDmg": 1,
+    "dmgPromedioPorTurno": 9,
+    "fecha": "2024-06-29T02:42:27.4420143-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Yordle",
+        "Nombre": "Heimerdinger",
+        "Apodo": "el Inventor Venerable",
+        "fechaNacimiento": "2003-05-05T00:00:00",
+        "Edad": 21
+      },
+      "caracteristicas": {
+        "Velocidad": 7,
+        "Destreza": 4,
+        "Fuerza": 7,
+        "Nivel": 8,
+        "Armadura": 10
+      }
+    },
+    "victorias": 1,
+    "dmgInfligido": 473,
+    "dmgRecibido": 117,
+    "ratioDeDmg": 4,
+    "dmgPromedioPorTurno": 15,
+    "fecha": "2024-06-29T02:42:42.7469526-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Humano",
+        "Nombre": "Gragas",
+        "Apodo": "el Revoltoso",
+        "fechaNacimiento": "1828-09-28T00:00:00",
+        "Edad": 196
+      },
+      "caracteristicas": {
+        "Velocidad": 3,
+        "Destreza": 4,
+        "Fuerza": 9,
+        "Nivel": 6,
+        "Armadura": 10
+      }
+    },
+    "victorias": 1,
+    "dmgInfligido": 342,
+    "dmgRecibido": 109,
+    "ratioDeDmg": 3,
+    "dmgPromedioPorTurno": 12,
+    "fecha": "2024-06-29T02:43:00.2824437-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Humano",
+        "Nombre": "Gragas",
+        "Apodo": "el Revoltoso",
+        "fechaNacimiento": "1828-09-28T00:00:00",
+        "Edad": 196
+      },
+      "caracteristicas": {
+        "Velocidad": 3,
+        "Destreza": 4,
+        "Fuerza": 9,
+        "Nivel": 6,
+        "Armadura": 10
+      }
+    },
+    "victorias": 2,
+    "dmgInfligido": 294,
+    "dmgRecibido": 38,
+    "ratioDeDmg": 7,
+    "dmgPromedioPorTurno": 10,
+    "fecha": "2024-06-29T10:26:59.1271414-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Humano",
+        "Nombre": "Gragas",
+        "Apodo": "el Revoltoso",
+        "fechaNacimiento": "1828-09-28T00:00:00",
+        "Edad": 196
+      },
+      "caracteristicas": {
+        "Velocidad": 3,
+        "Destreza": 4,
+        "Fuerza": 9,
+        "Nivel": 6,
+        "Armadura": 10
+      }
+    },
+    "victorias": 3,
+    "dmgInfligido": 364,
+    "dmgRecibido": 37,
+    "ratioDeDmg": 9.837838,
+    "dmgPromedioPorTurno": 9.333333,
+    "fecha": "2024-06-29T10:28:44.471685-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Humano",
+        "Nombre": "Vayne",
+        "Apodo": "la Cazadora Nocturna",
+        "fechaNacimiento": "1887-11-12T00:00:00",
+        "Edad": 137
+      },
+      "caracteristicas": {
+        "Velocidad": 8,
+        "Destreza": 3,
+        "Fuerza": 7,
+        "Nivel": 9,
+        "Armadura": 10
+      }
+    },
+    "victorias": 1,
+    "dmgInfligido": 153,
+    "dmgRecibido": 62,
+    "ratioDeDmg": 2.467742,
+    "dmgPromedioPorTurno": 10.928572,
+    "fecha": "2024-06-29T10:29:58.8850136-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Humano",
+        "Nombre": "Akshan",
+        "Apodo": "el Centinela Rebelde",
+        "fechaNacimiento": "1972-04-15T00:00:00",
+        "Edad": 52
+      },
+      "caracteristicas": {
+        "Velocidad": 7,
+        "Destreza": 3,
+        "Fuerza": 3,
+        "Nivel": 5,
+        "Armadura": 10
+      }
+    },
+    "victorias": 1,
+    "dmgInfligido": 218,
+    "dmgRecibido": 61,
+    "ratioDeDmg": 3.57,
+    "dmgPromedioPorTurno": 2.1,
+    "fecha": "2024-06-29T10:43:41.7753112-03:00"
   }
 ]

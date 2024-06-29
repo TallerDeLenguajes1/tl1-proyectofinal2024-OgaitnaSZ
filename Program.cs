@@ -18,7 +18,7 @@ if(gestion.existe("json/PersonajesGuardados.json")){
         do{
             personaje = fabrica.cargarPersonaje();
             personaje.caracteristicas.salud = 100;
-        }while(personajes.Contains(personaje));
+        }while(personajes.Contains(personaje));  //Control para que no hayan personajes repetidos
         personajes.Add(personaje);
     }
     gestion.guardarPersonajes(personajes,"PersonajesGuardados");
