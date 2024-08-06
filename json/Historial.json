@@ -22,29 +22,5 @@
     "ratioDeDmg": 2.37,
     "dmgPromedioPorTurno": 9.79,
     "fecha": "2024-07-23T18:31:14.482472-03:00"
-  },
-  {
-    "personaje": {
-      "datos": {
-        "Tipo": "Fighter",
-        "Nombre": "Skarner",
-        "Apodo": "la Vanguardia de Cristal",
-        "fechaNacimiento": "2003-01-13T00:00:00",
-        "Edad": 21
-      },
-      "caracteristicas": {
-        "Velocidad": 5,
-        "Destreza": 4,
-        "Fuerza": 9,
-        "Nivel": 7,
-        "Armadura": 10
-      }
-    },
-    "victorias": 1,
-    "dmgInfligido": 228,
-    "dmgRecibido": 78,
-    "ratioDeDmg": 2.92,
-    "dmgPromedioPorTurno": 8.44,
-    "fecha": "2024-08-06T19:20:05.2968158-03:00"
   }
 ]

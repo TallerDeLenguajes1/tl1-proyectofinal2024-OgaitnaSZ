@@ -24,22 +24,37 @@ namespace GestionPersonajes{
             }else{return false;}
         }
 
-        public void imprimirPersonaje(Personaje personaje){
-string datosPersonajes = $@"
-DATOS:
-    {personaje.datos.Nombre}, {personaje.datos.Apodo},
-    Tipo: {personaje.datos.Tipo}
-    Edad: {personaje.datos.Edad}
-    Fecha de nacimiento: {personaje.datos.fechaNacimiento.ToShortDateString()}
-CARACTERISTICAS:
-    Velocidad: {personaje.caracteristicas.Velocidad}
-    Destreza: {personaje.caracteristicas.Destreza}
-    Fuerza: {personaje.caracteristicas.Fuerza}
-    Nivel: {personaje.caracteristicas.Nivel}
-    Armadura: {personaje.caracteristicas.Armadura}
-------------------------------------------------------------";
-    Console.WriteLine(datosPersonajes);
+    public void imprimirPersonaje(Personaje personaje){
+        string[] datos = {
+            $"DATOS:",
+            $"    Tipo: {personaje.datos.Tipo}",
+            $"    Edad: {personaje.datos.Edad}",
+            $"    Fecha de nacimiento: {personaje.datos.fechaNacimiento.ToShortDateString()}"
+        };
+
+        string[] caracteristicas = {
+            $"CARACTERISTICAS:",
+            $"    Velocidad: {personaje.caracteristicas.Velocidad}",
+            $"    Destreza: {personaje.caracteristicas.Destreza}",
+            $"    Fuerza: {personaje.caracteristicas.Fuerza}",
+            $"    Nivel: {personaje.caracteristicas.Nivel}",
+            $"    Armadura: {personaje.caracteristicas.Armadura}"
+        };
+
+        int maxLineas = Math.Max(datos.Length, caracteristicas.Length);
+
+        Console.WriteLine(personaje.datos.Nombre + ", " + personaje.datos.Apodo);
+        for (int i = 0; i < maxLineas; i++){
+            string datosLinea = i < datos.Length ? datos[i] : "";
+            string caracteristicasLinea = i < caracteristicas.Length ? caracteristicas[i] : "";
+
+            Console.WriteLine($"{datosLinea,-40} {caracteristicasLinea}");
         }
+
+        Console.WriteLine("------------------------------------------------------------");
+    }
+
+
     }
 
 }

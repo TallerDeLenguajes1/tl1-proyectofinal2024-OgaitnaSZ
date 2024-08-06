@@ -1,162 +1,162 @@
 [
   {
     "datos": {
-      "Tipo": "Vampiro",
-      "Nombre": "Briar",
-      "Apodo": "la Hambrienta Sin Control",
-      "fechaNacimiento": "1951-06-05T00:00:00",
-      "Edad": 73
+      "Tipo": "Tank",
+      "Nombre": "Sejuani",
+      "Apodo": "la Furia del Norte",
+      "fechaNacimiento": "1876-09-09T00:00:00",
+      "Edad": 148
     },
     "caracteristicas": {
-      "Velocidad": 9,
+      "Velocidad": 4,
+      "Destreza": 2,
+      "Fuerza": 4,
+      "Nivel": 1,
+      "Armadura": 5
+    }
+  },
+  {
+    "datos": {
+      "Tipo": "Fighter",
+      "Nombre": "Skarner",
+      "Apodo": "la Vanguardia de Cristal",
+      "fechaNacimiento": "2003-01-13T00:00:00",
+      "Edad": 21
+    },
+    "caracteristicas": {
+      "Velocidad": 5,
       "Destreza": 4,
-      "Fuerza": 8,
-      "Nivel": 6,
-      "Armadura": 1
+      "Fuerza": 9,
+      "Nivel": 7,
+      "Armadura": 4
     }
   },
   {
     "datos": {
-      "Tipo": "Humano",
-      "Nombre": "Talon",
-      "Apodo": "la Sombra de la Navaja",
-      "fechaNacimiento": "1784-12-05T00:00:00",
-      "Edad": 240
-    },
-    "caracteristicas": {
-      "Velocidad": 8,
-      "Destreza": 1,
-      "Fuerza": 7,
-      "Nivel": 2,
-      "Armadura": 1
-    }
-  },
-  {
-    "datos": {
-      "Tipo": "Humano",
-      "Nombre": "Talon",
-      "Apodo": "la Sombra de la Navaja",
-      "fechaNacimiento": "1783-06-24T00:00:00",
-      "Edad": 241
+      "Tipo": "Tank",
+      "Nombre": "Shen",
+      "Apodo": "el Ojo del Crep\u00FAsculo",
+      "fechaNacimiento": "1728-01-15T00:00:00",
+      "Edad": 296
     },
     "caracteristicas": {
       "Velocidad": 2,
-      "Destreza": 2,
-      "Fuerza": 1,
-      "Nivel": 4,
-      "Armadura": 1
-    }
-  },
-  {
-    "datos": {
-      "Tipo": "Humano",
-      "Nombre": "Gragas",
-      "Apodo": "el Revoltoso",
-      "fechaNacimiento": "1828-09-28T00:00:00",
-      "Edad": 196
-    },
-    "caracteristicas": {
-      "Velocidad": 3,
-      "Destreza": 4,
-      "Fuerza": 9,
-      "Nivel": 6,
-      "Armadura": 1
-    }
-  },
-  {
-    "datos": {
-      "Tipo": "Humano",
-      "Nombre": "Lucian",
-      "Apodo": "el Purificador",
-      "fechaNacimiento": "1910-06-17T00:00:00",
-      "Edad": 114
-    },
-    "caracteristicas": {
-      "Velocidad": 1,
-      "Destreza": 3,
-      "Fuerza": 6,
-      "Nivel": 4,
-      "Armadura": 2
-    }
-  },
-  {
-    "datos": {
-      "Tipo": "No Muerto",
-      "Nombre": "Sion",
-      "Apodo": "el Coloso No Muerto",
-      "fechaNacimiento": "1734-07-17T00:00:00",
-      "Edad": 290
-    },
-    "caracteristicas": {
-      "Velocidad": 9,
-      "Destreza": 2,
-      "Fuerza": 3,
+      "Destreza": 1,
+      "Fuerza": 2,
       "Nivel": 9,
-      "Armadura": 7
+      "Armadura": 8
     }
   },
   {
     "datos": {
-      "Tipo": "Humano",
-      "Nombre": "Akshan",
-      "Apodo": "el Centinela Rebelde",
-      "fechaNacimiento": "1972-04-15T00:00:00",
-      "Edad": 52
+      "Tipo": "Fighter",
+      "Nombre": "Olaf",
+      "Apodo": "el Berserker",
+      "fechaNacimiento": "1790-12-27T00:00:00",
+      "Edad": 234
     },
     "caracteristicas": {
       "Velocidad": 7,
-      "Destreza": 3,
-      "Fuerza": 3,
-      "Nivel": 5,
-      "Armadura": 1
-    }
-  },
-  {
-    "datos": {
-      "Tipo": "Humano",
-      "Nombre": "Vayne",
-      "Apodo": "la Cazadora Nocturna",
-      "fechaNacimiento": "1887-11-12T00:00:00",
-      "Edad": 137
-    },
-    "caracteristicas": {
-      "Velocidad": 8,
-      "Destreza": 3,
+      "Destreza": 1,
       "Fuerza": 7,
-      "Nivel": 9,
-      "Armadura": 2
+      "Nivel": 2,
+      "Armadura": 9
     }
   },
   {
     "datos": {
-      "Tipo": "Golem",
-      "Nombre": "Blitzcrank",
-      "Apodo": "el Gran G\u00F3lem de Vapor",
-      "fechaNacimiento": "1786-06-28T00:00:00",
-      "Edad": 238
+      "Tipo": "Fighter",
+      "Nombre": "Lee Sin",
+      "Apodo": "el Monje Ciego",
+      "fechaNacimiento": "1857-04-24T00:00:00",
+      "Edad": 167
     },
     "caracteristicas": {
       "Velocidad": 4,
       "Destreza": 1,
-      "Fuerza": 4,
-      "Nivel": 5,
+      "Fuerza": 1,
+      "Nivel": 9,
       "Armadura": 1
     }
   },
   {
     "datos": {
-      "Tipo": "Yordle",
-      "Nombre": "Ziggs",
-      "Apodo": "el Experto en Hexplosivos",
-      "fechaNacimiento": "1828-08-07T00:00:00",
-      "Edad": 196
+      "Tipo": "Fighter",
+      "Nombre": "Skarner",
+      "Apodo": "la Vanguardia de Cristal",
+      "fechaNacimiento": "1812-08-26T00:00:00",
+      "Edad": 212
+    },
+    "caracteristicas": {
+      "Velocidad": 8,
+      "Destreza": 1,
+      "Fuerza": 1,
+      "Nivel": 1,
+      "Armadura": 6
+    }
+  },
+  {
+    "datos": {
+      "Tipo": "Assassin",
+      "Nombre": "Yone",
+      "Apodo": "el Imborrable",
+      "fechaNacimiento": "1840-05-01T00:00:00",
+      "Edad": 184
+    },
+    "caracteristicas": {
+      "Velocidad": 7,
+      "Destreza": 3,
+      "Fuerza": 7,
+      "Nivel": 3,
+      "Armadura": 2
+    }
+  },
+  {
+    "datos": {
+      "Tipo": "Support",
+      "Nombre": "Lulu",
+      "Apodo": "La Hechicera Had\u00EDstica",
+      "fechaNacimiento": "1830-12-11T00:00:00",
+      "Edad": 194
     },
     "caracteristicas": {
       "Velocidad": 2,
-      "Destreza": 1,
-      "Fuerza": 3,
-      "Nivel": 2,
+      "Destreza": 2,
+      "Fuerza": 6,
+      "Nivel": 7,
       "Armadura": 1
+    }
+  },
+  {
+    "datos": {
+      "Tipo": "Fighter",
+      "Nombre": "Darius",
+      "Apodo": "la mano de Noxus",
+      "fechaNacimiento": "1757-03-15T00:00:00",
+      "Edad": 267
+    },
+    "caracteristicas": {
+      "Velocidad": 8,
+      "Destreza": 3,
+      "Fuerza": 3,
+      "Nivel": 1,
+      "Armadura": 6
+    }
+  },
+  {
+    "datos": {
+      "Tipo": "Marksman",
+      "Nombre": "Kai\u0027Sa",
+      "Apodo": "La Hija del Vac\u00EDo",
+      "fechaNacimiento": "1728-05-04T00:00:00",
+      "Edad": 296
+    },
+    "caracteristicas": {
+      "Velocidad": 5,
+      "Destreza": 4,
+      "Fuerza": 7,
+      "Nivel": 8,
+      "Armadura": 4
     }
   }
 ]

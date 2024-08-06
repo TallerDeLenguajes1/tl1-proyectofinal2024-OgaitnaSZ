@@ -4,7 +4,6 @@ using Creador;
 using GestionPersonajes;
 using Historial;
 using Batalla;
-using ApiFrase;
 
 var personajes = new List<Personaje>();  //Lista de personajes
 
@@ -17,7 +16,7 @@ if(gestion.existe("json/PersonajesGuardados.json")){
         Personaje personaje = new Personaje();
         FabricaDePersonajes fabrica = new FabricaDePersonajes();
         do{
-            personaje = fabrica.cargarPersonaje();
+            personaje = await fabrica.cargarPersonaje();
             personaje.caracteristicas.salud = 100;
         }while(personajes.Contains(personaje));  //Control para que no hayan personajes repetidos
         personajes.Add(personaje);
@@ -35,12 +34,8 @@ Console.WriteLine("----- Comienza el torneo -----");
 Torneo batalla = new Torneo();
 Personaje ganador = batalla.vencedorTorneo(personajes);
 
-Frases fraseService = new Frases();
-string fraseDelDia = await fraseService.GetFraseDelDiaAsync();
-
 Console.WriteLine($"Felicidades! El ganador del torneo es {ganador.datos.Nombre}, {ganador.datos.Apodo}");
 gestion.imprimirPersonaje(ganador);
-Console.WriteLine("Frase del dia: " + fraseDelDia);
 
 //Guardar datos de ganador en el historial
 HistorialJson historial = new HistorialJson();
