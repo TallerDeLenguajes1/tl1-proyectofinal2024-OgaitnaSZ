@@ -1,9 +1,15 @@
 using Personajes;
+using System.Threading;
 
 namespace Batalla{
     public class Torneo{
         public Personaje vencedorTorneo(List<Personaje> personajes){
             int ronda = 1;
+            
+            //Cargar salud a los personajes
+            foreach (Personaje personaje in personajes){
+                personaje.caracteristicas.salud = 100;
+            }
 
             while(personajes.Count()>1){         //Mientras haya mas de un personaje en pie...
                 Random random = new Random();
@@ -15,8 +21,8 @@ namespace Batalla{
                 } while (pos1 == pos2);
                 Personaje personaje1 = personajes[pos1];     //Personajes aleatorios
                 Personaje personaje2 = personajes[pos2];
-                Console.WriteLine("\nRonda "+ ronda +": "+ personaje1.datos.Nombre+" VS "+personaje2.datos.Nombre);
-
+                Console.WriteLine("\n----- Ronda "+ ronda +": "+ personaje1.datos.Nombre+" VS "+personaje2.datos.Nombre + "-----");
+                Thread.Sleep(3000); //Agregar delay entre rondas
                 int turno = 0;
                 do{
                     if(turno%2 == 0){
@@ -33,11 +39,13 @@ namespace Batalla{
                 }else{
                     publicarGanador(personaje2, personaje1, personajes);
                 }
+                Thread.Sleep(3000); //Agregar delay entre rondas
                 ronda++;
             }
             return personajes[0];
         }
         public void atacar(Personaje personaje1, Personaje personaje2){
+            Console.WriteLine(personaje1.datos.Nombre + " ataca a " + personaje2.datos.Nombre);
             Random random = new Random();
             int ataque;
             int efectividad;
@@ -50,8 +58,11 @@ namespace Batalla{
             personaje1.caracteristicas.dmgInfligido += dmg;
             personaje2.caracteristicas.dmgRecibido += dmg;
             personaje2.caracteristicas.salud -= dmg;
+            Console.WriteLine(personaje1.datos.Nombre + " realiza " + dmg + " de danio, " + personaje2.datos.Nombre + " tiene " + personaje2.caracteristicas.salud + " de salud.");
+            Console.WriteLine("-----------------");
             personaje1.caracteristicas.turnosJugados++;
             personaje2.caracteristicas.turnosJugados++;
+            Thread.Sleep(1000); //Agregar delay entre rondas
         }
         public void publicarGanador(Personaje personaje1, Personaje personaje2, List<Personaje> personajes){
             Random random = new Random();

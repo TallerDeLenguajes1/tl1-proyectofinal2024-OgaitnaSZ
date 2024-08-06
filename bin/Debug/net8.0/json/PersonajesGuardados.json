@@ -1,162 +1,162 @@
 [
   {
     "datos": {
-      "Tipo": "Tank",
-      "Nombre": "Sejuani",
-      "Apodo": "la Furia del Norte",
-      "fechaNacimiento": "1876-09-09T00:00:00",
-      "Edad": 148
+      "Tipo": "Assassin",
+      "Nombre": "Yone",
+      "Apodo": "el Imborrable",
+      "fechaNacimiento": "1777-11-09T00:00:00",
+      "Edad": 247
     },
     "caracteristicas": {
-      "Velocidad": 4,
-      "Destreza": 2,
-      "Fuerza": 4,
-      "Nivel": 1,
-      "Armadura": 5
+      "Velocidad": 8,
+      "Destreza": 4,
+      "Fuerza": 6,
+      "Nivel": 2,
+      "Armadura": 3
     }
   },
   {
     "datos": {
       "Tipo": "Fighter",
-      "Nombre": "Skarner",
-      "Apodo": "la Vanguardia de Cristal",
-      "fechaNacimiento": "2003-01-13T00:00:00",
-      "Edad": 21
+      "Nombre": "Diana",
+      "Apodo": "el Desd\u00E9n de la Luna",
+      "fechaNacimiento": "1816-09-15T00:00:00",
+      "Edad": 208
     },
     "caracteristicas": {
       "Velocidad": 5,
       "Destreza": 4,
-      "Fuerza": 9,
-      "Nivel": 7,
-      "Armadura": 4
-    }
-  },
-  {
-    "datos": {
-      "Tipo": "Tank",
-      "Nombre": "Shen",
-      "Apodo": "el Ojo del Crep\u00FAsculo",
-      "fechaNacimiento": "1728-01-15T00:00:00",
-      "Edad": 296
-    },
-    "caracteristicas": {
-      "Velocidad": 2,
-      "Destreza": 1,
-      "Fuerza": 2,
-      "Nivel": 9,
-      "Armadura": 8
-    }
-  },
-  {
-    "datos": {
-      "Tipo": "Fighter",
-      "Nombre": "Olaf",
-      "Apodo": "el Berserker",
-      "fechaNacimiento": "1790-12-27T00:00:00",
-      "Edad": 234
-    },
-    "caracteristicas": {
-      "Velocidad": 7,
-      "Destreza": 1,
-      "Fuerza": 7,
-      "Nivel": 2,
-      "Armadura": 9
-    }
-  },
-  {
-    "datos": {
-      "Tipo": "Fighter",
-      "Nombre": "Lee Sin",
-      "Apodo": "el Monje Ciego",
-      "fechaNacimiento": "1857-04-24T00:00:00",
-      "Edad": 167
-    },
-    "caracteristicas": {
-      "Velocidad": 4,
-      "Destreza": 1,
-      "Fuerza": 1,
-      "Nivel": 9,
+      "Fuerza": 8,
+      "Nivel": 5,
       "Armadura": 1
     }
   },
   {
     "datos": {
       "Tipo": "Fighter",
-      "Nombre": "Skarner",
-      "Apodo": "la Vanguardia de Cristal",
-      "fechaNacimiento": "1812-08-26T00:00:00",
-      "Edad": 212
+      "Nombre": "Volibear",
+      "Apodo": "la Tormenta Implacable",
+      "fechaNacimiento": "1735-03-13T00:00:00",
+      "Edad": 289
     },
     "caracteristicas": {
-      "Velocidad": 8,
-      "Destreza": 1,
+      "Velocidad": 9,
+      "Destreza": 4,
       "Fuerza": 1,
-      "Nivel": 1,
-      "Armadura": 6
+      "Nivel": 7,
+      "Armadura": 4
     }
   },
   {
     "datos": {
-      "Tipo": "Assassin",
-      "Nombre": "Yone",
-      "Apodo": "el Imborrable",
-      "fechaNacimiento": "1840-05-01T00:00:00",
-      "Edad": 184
+      "Tipo": "Mage",
+      "Nombre": "Xerath",
+      "Apodo": "el Mago Ascendente",
+      "fechaNacimiento": "1771-12-13T00:00:00",
+      "Edad": 253
     },
     "caracteristicas": {
-      "Velocidad": 7,
-      "Destreza": 3,
+      "Velocidad": 5,
+      "Destreza": 1,
       "Fuerza": 7,
-      "Nivel": 3,
-      "Armadura": 2
+      "Nivel": 1,
+      "Armadura": 3
     }
   },
   {
     "datos": {
       "Tipo": "Support",
-      "Nombre": "Lulu",
-      "Apodo": "La Hechicera Had\u00EDstica",
-      "fechaNacimiento": "1830-12-11T00:00:00",
-      "Edad": 194
+      "Nombre": "Nami",
+      "Apodo": "la Invocadora de Mareas",
+      "fechaNacimiento": "1993-03-02T00:00:00",
+      "Edad": 31
     },
     "caracteristicas": {
-      "Velocidad": 2,
-      "Destreza": 2,
-      "Fuerza": 6,
+      "Velocidad": 3,
+      "Destreza": 1,
+      "Fuerza": 4,
       "Nivel": 7,
-      "Armadura": 1
+      "Armadura": 5
+    }
+  },
+  {
+    "datos": {
+      "Tipo": "Mage",
+      "Nombre": "Taliyah",
+      "Apodo": "la Tejedora de Piedra",
+      "fechaNacimiento": "1967-07-01T00:00:00",
+      "Edad": 57
+    },
+    "caracteristicas": {
+      "Velocidad": 8,
+      "Destreza": 1,
+      "Fuerza": 1,
+      "Nivel": 4,
+      "Armadura": 7
     }
   },
   {
     "datos": {
       "Tipo": "Fighter",
-      "Nombre": "Darius",
-      "Apodo": "la mano de Noxus",
-      "fechaNacimiento": "1757-03-15T00:00:00",
-      "Edad": 267
+      "Nombre": "Kled",
+      "Apodo": "el Jinete Cascarrabias",
+      "fechaNacimiento": "1848-08-22T00:00:00",
+      "Edad": 176
     },
     "caracteristicas": {
-      "Velocidad": 8,
-      "Destreza": 3,
-      "Fuerza": 3,
-      "Nivel": 1,
+      "Velocidad": 3,
+      "Destreza": 2,
+      "Fuerza": 9,
+      "Nivel": 4,
       "Armadura": 6
     }
   },
   {
     "datos": {
-      "Tipo": "Marksman",
-      "Nombre": "Kai\u0027Sa",
-      "Apodo": "La Hija del Vac\u00EDo",
-      "fechaNacimiento": "1728-05-04T00:00:00",
-      "Edad": 296
+      "Tipo": "Fighter",
+      "Nombre": "Udyr",
+      "Apodo": "el Cambiapieles",
+      "fechaNacimiento": "1796-02-24T00:00:00",
+      "Edad": 228
     },
     "caracteristicas": {
-      "Velocidad": 5,
-      "Destreza": 4,
+      "Velocidad": 7,
+      "Destreza": 1,
+      "Fuerza": 8,
+      "Nivel": 7,
+      "Armadura": 3
+    }
+  },
+  {
+    "datos": {
+      "Tipo": "Marksman",
+      "Nombre": "Lucian",
+      "Apodo": "el Purificador",
+      "fechaNacimiento": "1861-12-15T00:00:00",
+      "Edad": 163
+    },
+    "caracteristicas": {
+      "Velocidad": 6,
+      "Destreza": 1,
       "Fuerza": 7,
-      "Nivel": 8,
-      "Armadura": 4
+      "Nivel": 2,
+      "Armadura": 5
+    }
+  },
+  {
+    "datos": {
+      "Tipo": "Tank",
+      "Nombre": "Nautilus",
+      "Apodo": "el Tit\u00E1n de las Profundidades",
+      "fechaNacimiento": "1875-03-08T00:00:00",
+      "Edad": 149
+    },
+    "caracteristicas": {
+      "Velocidad": 4,
+      "Destreza": 1,
+      "Fuerza": 9,
+      "Nivel": 6,
+      "Armadura": 5
     }
   }
 ]

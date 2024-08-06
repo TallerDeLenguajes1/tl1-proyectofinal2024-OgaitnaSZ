@@ -2,49 +2,193 @@
   {
     "personaje": {
       "datos": {
-        "Tipo": "Humano",
-        "Nombre": "Zilean",
-        "Apodo": "el Guardi\u00E1n del Tiempo",
-        "fechaNacimiento": "1816-09-23T00:00:00",
-        "Edad": 208
+        "Tipo": "Mage",
+        "Nombre": "Karthus",
+        "Apodo": "el Canto de la Muerte",
+        "fechaNacimiento": "1949-06-26T00:00:00",
+        "Edad": 75
       },
       "caracteristicas": {
-        "Velocidad": 6,
-        "Destreza": 3,
-        "Fuerza": 7,
-        "Nivel": 8,
-        "Armadura": 8
-      }
-    },
-    "victorias": 1,
-    "dmgInfligido": 235,
-    "dmgRecibido": 99,
-    "ratioDeDmg": 2.37,
-    "dmgPromedioPorTurno": 9.79,
-    "fecha": "2024-07-23T18:31:14.482472-03:00"
-  },
-  {
-    "personaje": {
-      "datos": {
-        "Tipo": "Fighter",
-        "Nombre": "Skarner",
-        "Apodo": "la Vanguardia de Cristal",
-        "fechaNacimiento": "2003-01-13T00:00:00",
-        "Edad": 21
-      },
-      "caracteristicas": {
-        "Velocidad": 5,
+        "Velocidad": 4,
         "Destreza": 4,
         "Fuerza": 9,
-        "Nivel": 7,
+        "Nivel": 8,
         "Armadura": 10
       }
     },
     "victorias": 1,
-    "dmgInfligido": 228,
-    "dmgRecibido": 78,
-    "ratioDeDmg": 2.92,
-    "dmgPromedioPorTurno": 8.44,
-    "fecha": "2024-08-06T19:20:05.2968158-03:00"
+    "dmgInfligido": 343,
+    "dmgRecibido": 19,
+    "ratioDeDmg": 18.05,
+    "dmgPromedioPorTurno": 19.06,
+    "fecha": "2024-08-06T19:22:30.4383453-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Tank",
+        "Nombre": "Shen",
+        "Apodo": "el Ojo del Crep\u00FAsculo",
+        "fechaNacimiento": "1988-06-28T00:00:00",
+        "Edad": 36
+      },
+      "caracteristicas": {
+        "Velocidad": 7,
+        "Destreza": 3,
+        "Fuerza": 6,
+        "Nivel": 3,
+        "Armadura": 10
+      }
+    },
+    "victorias": 1,
+    "dmgInfligido": 224,
+    "dmgRecibido": 47,
+    "ratioDeDmg": 4.77,
+    "dmgPromedioPorTurno": 2.41,
+    "fecha": "2024-08-06T19:33:30.8058458-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Tank",
+        "Nombre": "Shen",
+        "Apodo": "el Ojo del Crep\u00FAsculo",
+        "fechaNacimiento": "1988-06-28T00:00:00",
+        "Edad": 36
+      },
+      "caracteristicas": {
+        "Velocidad": 7,
+        "Destreza": 3,
+        "Fuerza": 6,
+        "Nivel": 3,
+        "Armadura": 10
+      }
+    },
+    "victorias": 2,
+    "dmgInfligido": 209,
+    "dmgRecibido": 92,
+    "ratioDeDmg": 2.27,
+    "dmgPromedioPorTurno": 2.71,
+    "fecha": "2024-08-06T19:36:53.6228103-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Tank",
+        "Nombre": "Shen",
+        "Apodo": "el Ojo del Crep\u00FAsculo",
+        "fechaNacimiento": "1988-06-28T00:00:00",
+        "Edad": 36
+      },
+      "caracteristicas": {
+        "Velocidad": 7,
+        "Destreza": 3,
+        "Fuerza": 6,
+        "Nivel": 3,
+        "Armadura": 10
+      }
+    },
+    "victorias": 3,
+    "dmgInfligido": 211,
+    "dmgRecibido": 96,
+    "ratioDeDmg": 2.2,
+    "dmgPromedioPorTurno": 2.43,
+    "fecha": "2024-08-06T19:37:18.8443434-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Mage",
+        "Nombre": "Karthus",
+        "Apodo": "el Canto de la Muerte",
+        "fechaNacimiento": "1949-06-26T00:00:00",
+        "Edad": 75
+      },
+      "caracteristicas": {
+        "Velocidad": 4,
+        "Destreza": 4,
+        "Fuerza": 9,
+        "Nivel": 8,
+        "Armadura": 10
+      }
+    },
+    "victorias": 2,
+    "dmgInfligido": 289,
+    "dmgRecibido": 41,
+    "ratioDeDmg": 7.05,
+    "dmgPromedioPorTurno": 15.21,
+    "fecha": "2024-08-06T19:37:41.6205477-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Mage",
+        "Nombre": "Karthus",
+        "Apodo": "el Canto de la Muerte",
+        "fechaNacimiento": "1949-06-26T00:00:00",
+        "Edad": 75
+      },
+      "caracteristicas": {
+        "Velocidad": 4,
+        "Destreza": 4,
+        "Fuerza": 9,
+        "Nivel": 8,
+        "Armadura": 10
+      }
+    },
+    "victorias": 3,
+    "dmgInfligido": 341,
+    "dmgRecibido": 22,
+    "ratioDeDmg": 15.5,
+    "dmgPromedioPorTurno": 15.5,
+    "fecha": "2024-08-06T19:38:39.9638431-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Tank",
+        "Nombre": "Shen",
+        "Apodo": "el Ojo del Crep\u00FAsculo",
+        "fechaNacimiento": "1988-06-28T00:00:00",
+        "Edad": 36
+      },
+      "caracteristicas": {
+        "Velocidad": 7,
+        "Destreza": 3,
+        "Fuerza": 6,
+        "Nivel": 3,
+        "Armadura": 10
+      }
+    },
+    "victorias": 4,
+    "dmgInfligido": 235,
+    "dmgRecibido": 67,
+    "ratioDeDmg": 3.51,
+    "dmgPromedioPorTurno": 2.28,
+    "fecha": "2024-08-06T19:38:47.0849695-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Mage",
+        "Nombre": "Karthus",
+        "Apodo": "el Canto de la Muerte",
+        "fechaNacimiento": "1949-06-26T00:00:00",
+        "Edad": 75
+      },
+      "caracteristicas": {
+        "Velocidad": 4,
+        "Destreza": 4,
+        "Fuerza": 9,
+        "Nivel": 8,
+        "Armadura": 10
+      }
+    },
+    "victorias": 4,
+    "dmgInfligido": 267,
+    "dmgRecibido": 23,
+    "ratioDeDmg": 11.61,
+    "dmgPromedioPorTurno": 12.71,
+    "fecha": "2024-08-06T19:41:29.2160844-03:00"
   }
 ]
