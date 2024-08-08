@@ -57,5 +57,28 @@ namespace Historial{
                 return true;
             }else{return false;}
         }
+
+        public void mostrarHistorial(){
+            var ganadores = new List<Partida>();
+            try{
+                ganadores = leerGanadores("historial");   
+            }catch{
+                Console.WriteLine("Nno hay partidas recientes");
+            }
+            foreach(Partida ganador in ganadores){
+                imprimirPartida(ganador);
+            }
+        }
+
+        private void imprimirPartida(Partida partida){
+            Console.WriteLine(partida.personaje.datos.Nombre+","+partida.personaje.datos.Tipo);
+            Console.WriteLine("   Victorias: "+partida.victorias);
+            Console.WriteLine("   Dano infligido: "+partida.dmgInfligido);
+            Console.WriteLine("   Dano recibido: "+partida.dmgRecibido);
+            Console.WriteLine("   Ratio de dano: "+partida.ratioDeDmg);
+            Console.WriteLine("   Dano promedio por turno: "+partida.dmgPromedioPorTurno);
+            Console.WriteLine("   Fecha: "+partida.fecha.ToShortDateString());
+            Console.WriteLine("------------------------------------------------------------");
+        }
     }
 }

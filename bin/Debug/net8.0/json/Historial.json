@@ -2,193 +2,169 @@
   {
     "personaje": {
       "datos": {
-        "Tipo": "Mage",
-        "Nombre": "Karthus",
-        "Apodo": "el Canto de la Muerte",
-        "fechaNacimiento": "1949-06-26T00:00:00",
-        "Edad": 75
+        "Tipo": "Marksman",
+        "Nombre": "Caitlyn",
+        "Apodo": "la Sheriff de Pilt\u00F3ver",
+        "fechaNacimiento": "1799-11-08T00:00:00",
+        "Edad": 225
       },
       "caracteristicas": {
-        "Velocidad": 4,
-        "Destreza": 4,
+        "Velocidad": 3,
+        "Destreza": 3,
         "Fuerza": 9,
         "Nivel": 8,
         "Armadura": 10
       }
     },
     "victorias": 1,
-    "dmgInfligido": 343,
-    "dmgRecibido": 19,
-    "ratioDeDmg": 18.05,
-    "dmgPromedioPorTurno": 19.06,
-    "fecha": "2024-08-06T19:22:30.4383453-03:00"
+    "dmgInfligido": 466,
+    "dmgRecibido": 145,
+    "ratioDeDmg": 3.21,
+    "dmgPromedioPorTurno": 11.65,
+    "fecha": "2024-08-07T21:16:59.0121652-03:00"
   },
   {
     "personaje": {
       "datos": {
-        "Tipo": "Tank",
-        "Nombre": "Shen",
-        "Apodo": "el Ojo del Crep\u00FAsculo",
-        "fechaNacimiento": "1988-06-28T00:00:00",
-        "Edad": 36
+        "Tipo": "Mage",
+        "Nombre": "Aurelion Sol",
+        "Apodo": "el Forjador de Estrellas",
+        "fechaNacimiento": "1933-09-21T00:00:00",
+        "Edad": 91
       },
       "caracteristicas": {
-        "Velocidad": 7,
-        "Destreza": 3,
-        "Fuerza": 6,
-        "Nivel": 3,
+        "Velocidad": 3,
+        "Destreza": 2,
+        "Fuerza": 9,
+        "Nivel": 8,
         "Armadura": 10
       }
     },
     "victorias": 1,
-    "dmgInfligido": 224,
-    "dmgRecibido": 47,
-    "ratioDeDmg": 4.77,
-    "dmgPromedioPorTurno": 2.41,
-    "fecha": "2024-08-06T19:33:30.8058458-03:00"
+    "dmgInfligido": 346,
+    "dmgRecibido": 144,
+    "ratioDeDmg": 2.4,
+    "dmgPromedioPorTurno": 8.87,
+    "fecha": "2024-08-07T21:28:47.2987466-03:00"
   },
   {
     "personaje": {
       "datos": {
-        "Tipo": "Tank",
-        "Nombre": "Shen",
-        "Apodo": "el Ojo del Crep\u00FAsculo",
-        "fechaNacimiento": "1988-06-28T00:00:00",
-        "Edad": 36
+        "Tipo": "Marksman",
+        "Nombre": "Caitlyn",
+        "Apodo": "la Sheriff de Pilt\u00F3ver",
+        "fechaNacimiento": "1799-11-08T00:00:00",
+        "Edad": 225
       },
       "caracteristicas": {
-        "Velocidad": 7,
+        "Velocidad": 3,
         "Destreza": 3,
-        "Fuerza": 6,
-        "Nivel": 3,
-        "Armadura": 10
-      }
-    },
-    "victorias": 2,
-    "dmgInfligido": 209,
-    "dmgRecibido": 92,
-    "ratioDeDmg": 2.27,
-    "dmgPromedioPorTurno": 2.71,
-    "fecha": "2024-08-06T19:36:53.6228103-03:00"
-  },
-  {
-    "personaje": {
-      "datos": {
-        "Tipo": "Tank",
-        "Nombre": "Shen",
-        "Apodo": "el Ojo del Crep\u00FAsculo",
-        "fechaNacimiento": "1988-06-28T00:00:00",
-        "Edad": 36
-      },
-      "caracteristicas": {
-        "Velocidad": 7,
-        "Destreza": 3,
-        "Fuerza": 6,
-        "Nivel": 3,
-        "Armadura": 10
-      }
-    },
-    "victorias": 3,
-    "dmgInfligido": 211,
-    "dmgRecibido": 96,
-    "ratioDeDmg": 2.2,
-    "dmgPromedioPorTurno": 2.43,
-    "fecha": "2024-08-06T19:37:18.8443434-03:00"
-  },
-  {
-    "personaje": {
-      "datos": {
-        "Tipo": "Mage",
-        "Nombre": "Karthus",
-        "Apodo": "el Canto de la Muerte",
-        "fechaNacimiento": "1949-06-26T00:00:00",
-        "Edad": 75
-      },
-      "caracteristicas": {
-        "Velocidad": 4,
-        "Destreza": 4,
         "Fuerza": 9,
         "Nivel": 8,
         "Armadura": 10
       }
     },
     "victorias": 2,
-    "dmgInfligido": 289,
-    "dmgRecibido": 41,
-    "ratioDeDmg": 7.05,
-    "dmgPromedioPorTurno": 15.21,
-    "fecha": "2024-08-06T19:37:41.6205477-03:00"
+    "dmgInfligido": 236,
+    "dmgRecibido": 101,
+    "ratioDeDmg": 2.34,
+    "dmgPromedioPorTurno": 9.44,
+    "fecha": "2024-08-07T21:29:04.5371753-03:00"
   },
   {
     "personaje": {
       "datos": {
-        "Tipo": "Mage",
-        "Nombre": "Karthus",
-        "Apodo": "el Canto de la Muerte",
-        "fechaNacimiento": "1949-06-26T00:00:00",
-        "Edad": 75
+        "Tipo": "Marksman",
+        "Nombre": "Caitlyn",
+        "Apodo": "la Sheriff de Pilt\u00F3ver",
+        "fechaNacimiento": "1799-11-08T00:00:00",
+        "Edad": 225
       },
       "caracteristicas": {
-        "Velocidad": 4,
-        "Destreza": 4,
+        "Velocidad": 3,
+        "Destreza": 3,
         "Fuerza": 9,
         "Nivel": 8,
         "Armadura": 10
       }
     },
     "victorias": 3,
-    "dmgInfligido": 341,
-    "dmgRecibido": 22,
-    "ratioDeDmg": 15.5,
-    "dmgPromedioPorTurno": 15.5,
-    "fecha": "2024-08-06T19:38:39.9638431-03:00"
+    "dmgInfligido": 461,
+    "dmgRecibido": 138,
+    "ratioDeDmg": 3.34,
+    "dmgPromedioPorTurno": 11.82,
+    "fecha": "2024-08-07T21:29:19.598627-03:00"
   },
   {
     "personaje": {
       "datos": {
-        "Tipo": "Tank",
-        "Nombre": "Shen",
-        "Apodo": "el Ojo del Crep\u00FAsculo",
-        "fechaNacimiento": "1988-06-28T00:00:00",
-        "Edad": 36
+        "Tipo": "Marksman",
+        "Nombre": "Caitlyn",
+        "Apodo": "la Sheriff de Pilt\u00F3ver",
+        "fechaNacimiento": "1799-11-08T00:00:00",
+        "Edad": 225
       },
       "caracteristicas": {
-        "Velocidad": 7,
+        "Velocidad": 3,
         "Destreza": 3,
-        "Fuerza": 6,
-        "Nivel": 3,
-        "Armadura": 10
-      }
-    },
-    "victorias": 4,
-    "dmgInfligido": 235,
-    "dmgRecibido": 67,
-    "ratioDeDmg": 3.51,
-    "dmgPromedioPorTurno": 2.28,
-    "fecha": "2024-08-06T19:38:47.0849695-03:00"
-  },
-  {
-    "personaje": {
-      "datos": {
-        "Tipo": "Mage",
-        "Nombre": "Karthus",
-        "Apodo": "el Canto de la Muerte",
-        "fechaNacimiento": "1949-06-26T00:00:00",
-        "Edad": 75
-      },
-      "caracteristicas": {
-        "Velocidad": 4,
-        "Destreza": 4,
         "Fuerza": 9,
         "Nivel": 8,
         "Armadura": 10
       }
     },
     "victorias": 4,
-    "dmgInfligido": 267,
-    "dmgRecibido": 23,
-    "ratioDeDmg": 11.61,
-    "dmgPromedioPorTurno": 12.71,
-    "fecha": "2024-08-06T19:41:29.2160844-03:00"
+    "dmgInfligido": 546,
+    "dmgRecibido": 121,
+    "ratioDeDmg": 4.51,
+    "dmgPromedioPorTurno": 10.5,
+    "fecha": "2024-08-07T21:29:29.9884501-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Marksman",
+        "Nombre": "Caitlyn",
+        "Apodo": "la Sheriff de Pilt\u00F3ver",
+        "fechaNacimiento": "1799-11-08T00:00:00",
+        "Edad": 225
+      },
+      "caracteristicas": {
+        "Velocidad": 3,
+        "Destreza": 3,
+        "Fuerza": 9,
+        "Nivel": 8,
+        "Armadura": 10
+      }
+    },
+    "victorias": 5,
+    "dmgInfligido": 601,
+    "dmgRecibido": 147,
+    "ratioDeDmg": 4.09,
+    "dmgPromedioPorTurno": 12.79,
+    "fecha": "2024-08-07T21:29:38.5556036-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Marksman",
+        "Nombre": "Caitlyn",
+        "Apodo": "la Sheriff de Pilt\u00F3ver",
+        "fechaNacimiento": "1799-11-08T00:00:00",
+        "Edad": 225
+      },
+      "caracteristicas": {
+        "Velocidad": 3,
+        "Destreza": 3,
+        "Fuerza": 9,
+        "Nivel": 8,
+        "Armadura": 10
+      }
+    },
+    "victorias": 6,
+    "dmgInfligido": 248,
+    "dmgRecibido": 90,
+    "ratioDeDmg": 2.76,
+    "dmgPromedioPorTurno": 11.27,
+    "fecha": "2024-08-07T21:29:49.5799837-03:00"
   }
 ]

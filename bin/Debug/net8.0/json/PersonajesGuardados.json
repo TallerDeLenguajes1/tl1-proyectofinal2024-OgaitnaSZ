@@ -1,161 +1,161 @@
 [
   {
     "datos": {
-      "Tipo": "Assassin",
-      "Nombre": "Yone",
-      "Apodo": "el Imborrable",
-      "fechaNacimiento": "1777-11-09T00:00:00",
-      "Edad": 247
+      "Tipo": "Fighter",
+      "Nombre": "Gangplank",
+      "Apodo": "el Azote de los Mares",
+      "fechaNacimiento": "1962-12-16T00:00:00",
+      "Edad": 62
     },
     "caracteristicas": {
-      "Velocidad": 8,
+      "Velocidad": 2,
       "Destreza": 4,
       "Fuerza": 6,
       "Nivel": 2,
-      "Armadura": 3
-    }
-  },
-  {
-    "datos": {
-      "Tipo": "Fighter",
-      "Nombre": "Diana",
-      "Apodo": "el Desd\u00E9n de la Luna",
-      "fechaNacimiento": "1816-09-15T00:00:00",
-      "Edad": 208
-    },
-    "caracteristicas": {
-      "Velocidad": 5,
-      "Destreza": 4,
-      "Fuerza": 8,
-      "Nivel": 5,
-      "Armadura": 1
-    }
-  },
-  {
-    "datos": {
-      "Tipo": "Fighter",
-      "Nombre": "Volibear",
-      "Apodo": "la Tormenta Implacable",
-      "fechaNacimiento": "1735-03-13T00:00:00",
-      "Edad": 289
-    },
-    "caracteristicas": {
-      "Velocidad": 9,
-      "Destreza": 4,
-      "Fuerza": 1,
-      "Nivel": 7,
-      "Armadura": 4
+      "Armadura": 7
     }
   },
   {
     "datos": {
       "Tipo": "Mage",
-      "Nombre": "Xerath",
-      "Apodo": "el Mago Ascendente",
-      "fechaNacimiento": "1771-12-13T00:00:00",
-      "Edad": 253
+      "Nombre": "Lissandra",
+      "Apodo": "la Bruja de Hielo",
+      "fechaNacimiento": "1817-02-14T00:00:00",
+      "Edad": 207
     },
     "caracteristicas": {
-      "Velocidad": 5,
-      "Destreza": 1,
-      "Fuerza": 7,
-      "Nivel": 1,
-      "Armadura": 3
+      "Velocidad": 1,
+      "Destreza": 4,
+      "Fuerza": 3,
+      "Nivel": 5,
+      "Armadura": 4
     }
   },
   {
     "datos": {
-      "Tipo": "Support",
-      "Nombre": "Nami",
-      "Apodo": "la Invocadora de Mareas",
-      "fechaNacimiento": "1993-03-02T00:00:00",
-      "Edad": 31
+      "Tipo": "Assassin",
+      "Nombre": "Viego",
+      "Apodo": "El Rey Arruinado",
+      "fechaNacimiento": "2011-04-25T00:00:00",
+      "Edad": 13
     },
     "caracteristicas": {
-      "Velocidad": 3,
+      "Velocidad": 9,
+      "Destreza": 2,
+      "Fuerza": 1,
+      "Nivel": 5,
+      "Armadura": 9
+    }
+  },
+  {
+    "datos": {
+      "Tipo": "Fighter",
+      "Nombre": "Kayn",
+      "Apodo": "el Segador Sombr\u00EDo",
+      "fechaNacimiento": "1948-04-09T00:00:00",
+      "Edad": 76
+    },
+    "caracteristicas": {
+      "Velocidad": 9,
       "Destreza": 1,
-      "Fuerza": 4,
+      "Fuerza": 3,
       "Nivel": 7,
       "Armadura": 5
     }
   },
   {
     "datos": {
-      "Tipo": "Mage",
-      "Nombre": "Taliyah",
-      "Apodo": "la Tejedora de Piedra",
-      "fechaNacimiento": "1967-07-01T00:00:00",
-      "Edad": 57
+      "Tipo": "Marksman",
+      "Nombre": "Caitlyn",
+      "Apodo": "la Sheriff de Pilt\u00F3ver",
+      "fechaNacimiento": "1799-11-08T00:00:00",
+      "Edad": 225
     },
     "caracteristicas": {
-      "Velocidad": 8,
-      "Destreza": 1,
-      "Fuerza": 1,
-      "Nivel": 4,
+      "Velocidad": 3,
+      "Destreza": 3,
+      "Fuerza": 9,
+      "Nivel": 8,
       "Armadura": 7
     }
   },
   {
     "datos": {
-      "Tipo": "Fighter",
-      "Nombre": "Kled",
-      "Apodo": "el Jinete Cascarrabias",
-      "fechaNacimiento": "1848-08-22T00:00:00",
-      "Edad": 176
+      "Tipo": "Mage",
+      "Nombre": "Twisted Fate",
+      "Apodo": "el Maestro de las Cartas",
+      "fechaNacimiento": "1968-09-04T00:00:00",
+      "Edad": 56
+    },
+    "caracteristicas": {
+      "Velocidad": 3,
+      "Destreza": 1,
+      "Fuerza": 7,
+      "Nivel": 2,
+      "Armadura": 1
+    }
+  },
+  {
+    "datos": {
+      "Tipo": "Marksman",
+      "Nombre": "Samira",
+      "Apodo": "la Rosa del Desierto",
+      "fechaNacimiento": "1926-03-25T00:00:00",
+      "Edad": 98
+    },
+    "caracteristicas": {
+      "Velocidad": 8,
+      "Destreza": 2,
+      "Fuerza": 8,
+      "Nivel": 5,
+      "Armadura": 2
+    }
+  },
+  {
+    "datos": {
+      "Tipo": "Mage",
+      "Nombre": "Aurelion Sol",
+      "Apodo": "el Forjador de Estrellas",
+      "fechaNacimiento": "1933-09-21T00:00:00",
+      "Edad": 91
     },
     "caracteristicas": {
       "Velocidad": 3,
       "Destreza": 2,
       "Fuerza": 9,
-      "Nivel": 4,
-      "Armadura": 6
+      "Nivel": 8,
+      "Armadura": 3
     }
   },
   {
     "datos": {
-      "Tipo": "Fighter",
-      "Nombre": "Udyr",
-      "Apodo": "el Cambiapieles",
-      "fechaNacimiento": "1796-02-24T00:00:00",
-      "Edad": 228
+      "Tipo": "Assassin",
+      "Nombre": "Ekko",
+      "Apodo": "el Joven que Fragment\u00F3 el Tiempo",
+      "fechaNacimiento": "1759-07-17T00:00:00",
+      "Edad": 265
     },
     "caracteristicas": {
-      "Velocidad": 7,
-      "Destreza": 1,
-      "Fuerza": 8,
-      "Nivel": 7,
+      "Velocidad": 1,
+      "Destreza": 4,
+      "Fuerza": 1,
+      "Nivel": 6,
       "Armadura": 3
     }
   },
   {
     "datos": {
       "Tipo": "Marksman",
-      "Nombre": "Lucian",
-      "Apodo": "el Purificador",
-      "fechaNacimiento": "1861-12-15T00:00:00",
-      "Edad": 163
+      "Nombre": "Graves",
+      "Apodo": "el Forajido",
+      "fechaNacimiento": "2014-07-17T00:00:00",
+      "Edad": 10
     },
     "caracteristicas": {
-      "Velocidad": 6,
-      "Destreza": 1,
-      "Fuerza": 7,
-      "Nivel": 2,
-      "Armadura": 5
-    }
-  },
-  {
-    "datos": {
-      "Tipo": "Tank",
-      "Nombre": "Nautilus",
-      "Apodo": "el Tit\u00E1n de las Profundidades",
-      "fechaNacimiento": "1875-03-08T00:00:00",
-      "Edad": 149
-    },
-    "caracteristicas": {
-      "Velocidad": 4,
-      "Destreza": 1,
-      "Fuerza": 9,
-      "Nivel": 6,
+      "Velocidad": 1,
+      "Destreza": 4,
+      "Fuerza": 4,
+      "Nivel": 3,
       "Armadura": 5
     }
   }

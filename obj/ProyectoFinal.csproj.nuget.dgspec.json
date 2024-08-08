@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\santi\\OneDrive\\Desktop\\ProyectoFinal\\tl1-proyectofinal2024-OgaitnaSZ\\ProyectoFinal.csproj": {}
+    "c:\\Users\\santi\\Desktop\\taller1\\tps\\ProyectoFinal\\tl1-proyectofinal2024-OgaitnaSZ\\ProyectoFinal.csproj": {}
   },
   "projects": {
-    "c:\\Users\\santi\\OneDrive\\Desktop\\ProyectoFinal\\tl1-proyectofinal2024-OgaitnaSZ\\ProyectoFinal.csproj": {
+    "c:\\Users\\santi\\Desktop\\taller1\\tps\\ProyectoFinal\\tl1-proyectofinal2024-OgaitnaSZ\\ProyectoFinal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\santi\\OneDrive\\Desktop\\ProyectoFinal\\tl1-proyectofinal2024-OgaitnaSZ\\ProyectoFinal.csproj",
+        "projectUniqueName": "c:\\Users\\santi\\Desktop\\taller1\\tps\\ProyectoFinal\\tl1-proyectofinal2024-OgaitnaSZ\\ProyectoFinal.csproj",
         "projectName": "ProyectoFinal",
-        "projectPath": "c:\\Users\\santi\\OneDrive\\Desktop\\ProyectoFinal\\tl1-proyectofinal2024-OgaitnaSZ\\ProyectoFinal.csproj",
+        "projectPath": "c:\\Users\\santi\\Desktop\\taller1\\tps\\ProyectoFinal\\tl1-proyectofinal2024-OgaitnaSZ\\ProyectoFinal.csproj",
         "packagesPath": "C:\\Users\\santi\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\santi\\OneDrive\\Desktop\\ProyectoFinal\\tl1-proyectofinal2024-OgaitnaSZ\\obj\\",
+        "outputPath": "c:\\Users\\santi\\Desktop\\taller1\\tps\\ProyectoFinal\\tl1-proyectofinal2024-OgaitnaSZ\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\santi\\AppData\\Roaming\\NuGet\\NuGet.Config"

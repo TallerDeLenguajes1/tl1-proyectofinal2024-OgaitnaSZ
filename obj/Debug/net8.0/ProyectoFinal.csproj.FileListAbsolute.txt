@@ -28,6 +28,3 @@ c:\Users\santi\Desktop\taller1\tps\ProyectoFinal\tl1-proyectofinal2024-OgaitnaSZ
 c:\Users\santi\Desktop\taller1\tps\ProyectoFinal\tl1-proyectofinal2024-OgaitnaSZ\obj\Debug\net8.0\ProyectoFinal.pdb
 c:\Users\santi\Desktop\taller1\tps\ProyectoFinal\tl1-proyectofinal2024-OgaitnaSZ\obj\Debug\net8.0\ProyectoFinal.genruntimeconfig.cache
 c:\Users\santi\Desktop\taller1\tps\ProyectoFinal\tl1-proyectofinal2024-OgaitnaSZ\obj\Debug\net8.0\ref\ProyectoFinal.dll
-c:\Users\santi\Desktop\taller1\tps\ProyectoFinal\tl1-proyectofinal2024-OgaitnaSZ\bin\Debug\net8.0\json\Historial.json
-c:\Users\santi\Desktop\taller1\tps\ProyectoFinal\tl1-proyectofinal2024-OgaitnaSZ\bin\Debug\net8.0\json\nombresyapodos.json
-c:\Users\santi\Desktop\taller1\tps\ProyectoFinal\tl1-proyectofinal2024-OgaitnaSZ\bin\Debug\net8.0\json\PersonajesGuardados.json
