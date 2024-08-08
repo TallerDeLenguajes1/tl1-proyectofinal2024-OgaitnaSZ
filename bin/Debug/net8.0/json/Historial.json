@@ -118,5 +118,77 @@
     "ratioDeDmg": 7.82,
     "dmgPromedioPorTurno": 10.03,
     "fecha": "2024-08-08T00:01:05.419734-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Mage",
+        "Nombre": "Sylas",
+        "Apodo": "el Usurpador",
+        "fechaNacimiento": "1784-02-27T00:00:00",
+        "Edad": 240
+      },
+      "caracteristicas": {
+        "Velocidad": 2,
+        "Destreza": 3,
+        "Fuerza": 7,
+        "Nivel": 7,
+        "Armadura": 10
+      }
+    },
+    "victorias": 1,
+    "dmgInfligido": 331,
+    "dmgRecibido": 69,
+    "ratioDeDmg": 4.8,
+    "dmgPromedioPorTurno": 6.9,
+    "fecha": "2024-08-08T00:02:51.6308975-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Mage",
+        "Nombre": "Sylas",
+        "Apodo": "el Usurpador",
+        "fechaNacimiento": "1784-02-27T00:00:00",
+        "Edad": 240
+      },
+      "caracteristicas": {
+        "Velocidad": 6,
+        "Destreza": 4,
+        "Fuerza": 9,
+        "Nivel": 7,
+        "Armadura": 10
+      }
+    },
+    "victorias": 2,
+    "dmgInfligido": 334,
+    "dmgRecibido": 63,
+    "ratioDeDmg": 5.3,
+    "dmgPromedioPorTurno": 11.52,
+    "fecha": "2024-08-08T00:08:26.7871708-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Fighter",
+        "Nombre": "Kayle",
+        "Apodo": "la Justiciera",
+        "fechaNacimiento": "1820-01-28T00:00:00",
+        "Edad": 204
+      },
+      "caracteristicas": {
+        "Velocidad": 6,
+        "Destreza": 2,
+        "Fuerza": 6,
+        "Nivel": 8,
+        "Armadura": 10
+      }
+    },
+    "victorias": 1,
+    "dmgInfligido": 212,
+    "dmgRecibido": 70,
+    "ratioDeDmg": 3.03,
+    "dmgPromedioPorTurno": 4.71,
+    "fecha": "2024-08-08T00:08:38.002497-03:00"
   }
 ]

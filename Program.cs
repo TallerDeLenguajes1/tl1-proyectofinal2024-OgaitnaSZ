@@ -8,6 +8,7 @@ using Batalla;
 var personajes = new List<Personaje>();  //Lista de personajes
 HistorialJson historial = new HistorialJson();
 PersonajesJson gestion = new PersonajesJson();
+FabricaDePersonajes fabrica = new FabricaDePersonajes();
 
 
 //Inicio del juego
@@ -23,7 +24,6 @@ while(control){
             if(gestion.existe("json/PersonajesGuardados.json")){  //Verificar si existen personajes
                 personajes = gestion.leerPersonajes("PersonajesGuardados");  
             }else{   //Sino, genera personajes nuevos
-                FabricaDePersonajes fabrica = new FabricaDePersonajes();
                 personajes = await fabrica.cargarPersonajes();
                 gestion.guardarPersonajes(personajes,"PersonajesGuardados");
             }
@@ -31,6 +31,9 @@ while(control){
             //Mostrar personajes
             Console.WriteLine("Participantes del torneo:");
             foreach(Personaje personaje in personajes){
+                Random random = new Random();
+                //Asignar caracteristicas aleatorias
+                personaje.caracteristicas = fabrica.asignarCaracteristicas(random.Next(1, 10), random.Next(1, 5), random.Next(1, 10), random.Next(1, 10), random.Next(1, 10));
                 gestion.imprimirPersonaje(personaje);
             }
 
@@ -39,7 +42,7 @@ while(control){
             nombreApuesta = gestion.realizarApuesta(personajes);
 
             //Comenzar partida
-            Console.WriteLine("----- Comienza el torneo -----");
+            Console.WriteLine("━━━━━━ Comienza el torneo ━━━━━━");
             Torneo batalla = new Torneo();
             Personaje ganador = batalla.vencedorTorneo(personajes);
 

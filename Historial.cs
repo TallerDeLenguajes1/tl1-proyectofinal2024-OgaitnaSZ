@@ -78,7 +78,7 @@ namespace Historial{
             Console.WriteLine("   Ratio de dano: "+partida.ratioDeDmg);
             Console.WriteLine("   Dano promedio por turno: "+partida.dmgPromedioPorTurno);
             Console.WriteLine("   Fecha: "+partida.fecha.ToShortDateString());
-            Console.WriteLine("------------------------------------------------------------");
+            Console.WriteLine("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
         }
     }
 }

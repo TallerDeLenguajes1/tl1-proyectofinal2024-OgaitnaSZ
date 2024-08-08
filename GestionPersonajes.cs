@@ -43,7 +43,7 @@ namespace GestionPersonajes{
 
         int maxLineas = Math.Max(datos.Length, caracteristicas.Length);
 
-        Console.WriteLine(personaje.datos.Nombre + ", " + personaje.datos.Apodo);
+        Console.WriteLine(personaje.datos.Nombre+", "+personaje.datos.Apodo);
         for (int i = 0; i < maxLineas; i++){
             string datosLinea = i < datos.Length ? datos[i] : "";
             string caracteristicasLinea = i < caracteristicas.Length ? caracteristicas[i] : "";
@@ -51,7 +51,7 @@ namespace GestionPersonajes{
             Console.WriteLine($"{datosLinea,-40} {caracteristicasLinea}");
         }
 
-        Console.WriteLine("------------------------------------------------------------");
+        Console.WriteLine("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
     }
 
     public string realizarApuesta(List<Personaje> personajes){
