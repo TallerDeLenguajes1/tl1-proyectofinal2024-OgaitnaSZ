@@ -4,16 +4,17 @@ using Creador;
 using GestionPersonajes;
 using Historial;
 using Batalla;
+using GestionarProyecto;
 
 var personajes = new List<Personaje>();  //Lista de personajes
 HistorialJson historial = new HistorialJson();
 PersonajesJson gestion = new PersonajesJson();
 FabricaDePersonajes fabrica = new FabricaDePersonajes();
-
+Gestionar gestionar = new Gestionar();
 
 //Inicio del juego
 Console.WriteLine("Bienvenidos a League of Legends Battle Royale");
-Console.WriteLine("Seleccione una opcion:\n0: Iniciar el juego\n1: Ver Historial de ganadores\n2: Salir\n");
+gestionar.menuOpciones();
 bool control = true;
 int opcion;
 while(control){
@@ -37,21 +38,23 @@ while(control){
                 gestion.imprimirPersonaje(personaje);
             }
 
-            //Apuesta por el ganador
-            string nombreApuesta;
-            nombreApuesta = gestion.realizarApuesta(personajes);
-
             //Comenzar partida
             Console.WriteLine("━━━━━━ Comienza el torneo ━━━━━━");
             Torneo batalla = new Torneo();
-            Personaje ganador = batalla.vencedorTorneo(personajes);
-
-            //Mensaje ganador
-            gestion.mostarGanador(ganador, nombreApuesta);
-
-            //Guardar datos de ganador en el historial        
-            historial.GuardarGanador(ganador,"Historial");
-            control = false;
+            bool controlModoDeJuego = true;
+            while(control){
+                gestionar.modoDeJuego();
+                opcion = int.Parse(Console.ReadLine());
+                if(opcion == 0){
+                    batalla.battleRoyale(personajes);
+                    controlModoDeJuego = false;
+                    control = false;
+                }else{
+                    batalla.peleaEquipos(personajes);
+                    controlModoDeJuego = false;
+                    control = false;
+                }
+            }
         break;
         case 1:
             historial.mostrarHistorial();

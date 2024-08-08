@@ -54,28 +54,6 @@ namespace GestionPersonajes{
         Console.WriteLine("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
     }
 
-    public string realizarApuesta(List<Personaje> personajes){
-        Console.WriteLine("Escribe el nombre del personaje por el que apuestas:");
-        bool encontrado;
-        string nombreApuesta;
-        do{
-            nombreApuesta = Console.ReadLine();
-            encontrado = false;
-            foreach(Personaje personaje in personajes){
-                if (personaje.datos.Nombre.ToLower() == nombreApuesta.ToLower()){
-                    encontrado = true;
-                    break;
-                }
-            }
-            if (encontrado){
-                Console.WriteLine($"El personaje con el nombre '{nombreApuesta}' se ha encontrado.");
-            }else{
-                Console.WriteLine("No se encontro el personaje, escribe otro por favor: ");
-            }
-        }while(!encontrado);
-        
-        return nombreApuesta;
-    } 
     public void mostarGanador(Personaje ganador, string nombreApuesta){
         Console.WriteLine($"\nFelicidades! El ganador del torneo es:");
         imprimirPersonaje(ganador);
