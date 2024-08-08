@@ -22,7 +22,7 @@ namespace Batalla{
                 Personaje personaje1 = personajes[pos1];     //Personajes aleatorios
                 Personaje personaje2 = personajes[pos2];
                 Console.WriteLine("\n----- Ronda "+ ronda +": "+ personaje1.datos.Nombre+" VS "+personaje2.datos.Nombre + "-----");
-                Thread.Sleep(3000); //Agregar delay entre rondas
+                //Thread.Sleep(3000); //Agregar delay entre rondas
                 int turno = 0;
                 do{
                     if(turno%2 == 0){
@@ -39,7 +39,7 @@ namespace Batalla{
                 }else{
                     publicarGanador(personaje2, personaje1, personajes);
                 }
-                Thread.Sleep(3000); //Agregar delay entre rondas
+                //Thread.Sleep(3000); //Agregar delay entre rondas
                 ronda++;
             }
             return personajes[0];
@@ -62,7 +62,7 @@ namespace Batalla{
             Console.WriteLine("-----------------");
             personaje1.caracteristicas.turnosJugados++;
             personaje2.caracteristicas.turnosJugados++;
-            Thread.Sleep(1000); //Agregar delay entre rondas
+            //Thread.Sleep(1000); //Agregar delay entre rondas
         }
         public void publicarGanador(Personaje personaje1, Personaje personaje2, List<Personaje> personajes){
             Random random = new Random();

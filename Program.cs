@@ -23,14 +23,8 @@ while(control){
             if(gestion.existe("json/PersonajesGuardados.json")){  //Verificar si existen personajes
                 personajes = gestion.leerPersonajes("PersonajesGuardados");  
             }else{   //Sino, genera personajes nuevos
-                for(int i=0 ; i<10 ; i++){
-                    Personaje personaje = new Personaje();
-                    FabricaDePersonajes fabrica = new FabricaDePersonajes();
-                    do{
-                        personaje = await fabrica.cargarPersonaje();
-                    }while(personajes.Contains(personaje));  //Control para que no hayan personajes repetidos
-                    personajes.Add(personaje);
-                }
+                FabricaDePersonajes fabrica = new FabricaDePersonajes();
+                personajes = await fabrica.cargarPersonajes();
                 gestion.guardarPersonajes(personajes,"PersonajesGuardados");
             }
 

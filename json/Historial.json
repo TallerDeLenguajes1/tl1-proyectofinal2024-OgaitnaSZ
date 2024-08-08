@@ -118,5 +118,29 @@
     "ratioDeDmg": 7.82,
     "dmgPromedioPorTurno": 10.03,
     "fecha": "2024-08-08T00:01:05.419734-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Mage",
+        "Nombre": "Sylas",
+        "Apodo": "el Usurpador",
+        "fechaNacimiento": "1784-02-27T00:00:00",
+        "Edad": 240
+      },
+      "caracteristicas": {
+        "Velocidad": 2,
+        "Destreza": 3,
+        "Fuerza": 7,
+        "Nivel": 7,
+        "Armadura": 10
+      }
+    },
+    "victorias": 1,
+    "dmgInfligido": 331,
+    "dmgRecibido": 69,
+    "ratioDeDmg": 4.8,
+    "dmgPromedioPorTurno": 6.9,
+    "fecha": "2024-08-08T00:02:51.6308975-03:00"
   }
 ]

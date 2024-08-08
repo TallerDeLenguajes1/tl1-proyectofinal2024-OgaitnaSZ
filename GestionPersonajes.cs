@@ -68,9 +68,9 @@ namespace GestionPersonajes{
                 }
             }
             if (encontrado){
-                Console.WriteLine($"El personaje con el nombre '{nombreApuesta}' se ha encçontrado.");
+                Console.WriteLine($"El personaje con el nombre '{nombreApuesta}' se ha encontrado.");
             }else{
-                Console.WriteLine($"No se encontro el personaje, escribe otro por favor: ");
+                Console.WriteLine("No se encontro el personaje, escribe otro por favor: ");
             }
         }while(!encontrado);
         

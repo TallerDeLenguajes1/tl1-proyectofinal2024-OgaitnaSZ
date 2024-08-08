@@ -16,14 +16,29 @@ namespace Creador {
     public class FabricaDePersonajes {
         Random random = new Random();
 
-        public async Task<Personaje> cargarPersonaje() {
+        public async Task<List<Personaje>> cargarPersonajes() {
             List<Identidad> datosList = await ObtenerDatosDeAPI();
-            Personaje personaje = new Personaje();
+            var personajes = new List<Personaje>();
             
-            // Asignacion de valores
-            personaje.datos = asignarDatos(datosList);
-            personaje.caracteristicas = asignarCaracteristicas(random.Next(1, 10), random.Next(1, 5), random.Next(1, 10), random.Next(1, 10), random.Next(1, 10));
-            return personaje;
+            for(int i=0 ; i<10 ; i++){
+                bool encontrado = true;
+                do{  //Control de personajes repetidos
+                    Personaje personaje = new Personaje();
+                    personaje.datos = asignarDatos(datosList);
+                    personaje.caracteristicas = asignarCaracteristicas(random.Next(1, 10), random.Next(1, 5), random.Next(1, 10), random.Next(1, 10), random.Next(1, 10));
+                    foreach(Personaje personajeLista in personajes){
+                        if (personajeLista.datos.Nombre.ToLower() == personaje.datos.Nombre.ToLower()){
+                            encontrado = false;
+                            break;
+                        }
+                    }
+                    if(encontrado){
+                        personajes.Add(personaje);
+                        encontrado = false;
+                    }
+                }while(encontrado);
+            }
+            return personajes;
         }
 
         public async Task<List<Identidad>> ObtenerDatosDeAPI() {
