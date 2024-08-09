@@ -6,6 +6,12 @@ using System.Threading;
 namespace Batalla{
     public class Torneo{
         public void battleRoyale(List<Personaje> personajes){
+            PersonajesJson gestion = new PersonajesJson();  
+            HistorialJson historial = new HistorialJson(); 
+            //Mostrar personajes
+            Console.WriteLine("Participantes del torneo:");
+            gestion.imprimirListaDePersonajes(personajes);
+
             int ronda = 1;
             string nombreApuesta = realizarApuesta(personajes);
 
@@ -40,15 +46,15 @@ namespace Batalla{
                 //Thread.Sleep(3000); //Agregar delay entre rondas
                 ronda++;
             }
-            PersonajesJson gestion = new PersonajesJson();
             gestion.mostarGanador(personajes[0], nombreApuesta);
 
-            //Guardar datos de ganador en el historial     
-            HistorialJson historial = new HistorialJson();   
+            //Guardar datos de ganador en el historial        
             historial.GuardarGanador(personajes[0],"Historial");
         }
 
         public void peleaEquipos(List<Personaje> personajes){
+            PersonajesJson gestion = new PersonajesJson();  
+            HistorialJson historial = new HistorialJson(); 
             var equipo1 = new List<Personaje>();
             var equipo2 = new List<Personaje>();
             Random random = new Random();
@@ -63,6 +69,12 @@ namespace Batalla{
                     personajes.Remove(personajes[pos]);
                 }
             }
+
+            //Mostrar equipos
+            Console.WriteLine("Equipo 1:");
+            gestion.imprimirListaDePersonajes(equipo1);
+            Console.WriteLine("Equipo 2:");
+            gestion.imprimirListaDePersonajes(equipo2);
 
             int ronda = 1;
             while(equipo1.Count()>1 && equipo2.Count()>1){  
@@ -99,9 +111,7 @@ namespace Batalla{
                 //Thread.Sleep(3000); //Agregar delay entre rondas
                 ronda++;
             }
-            PersonajesJson gestion = new PersonajesJson();
-                        //Guardar datos de ganador en el historial     
-            HistorialJson historial = new HistorialJson();   
+  
             if(equipo1.Count()>equipo2.Count()){
                 Console.WriteLine("Equipo 1 ganador\nLos integrantes del equipo son:");
                 foreach(Personaje personaje in equipo1){

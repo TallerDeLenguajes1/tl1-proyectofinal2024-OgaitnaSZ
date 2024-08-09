@@ -262,5 +262,29 @@
     "ratioDeDmg": 3.44,
     "dmgPromedioPorTurno": 10.2,
     "fecha": "2024-08-08T19:40:40.9038555-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Fighter",
+        "Nombre": "Xin Zhao",
+        "Apodo": "el Senescal de Demacia",
+        "fechaNacimiento": "1751-06-08T00:00:00",
+        "Edad": 273
+      },
+      "caracteristicas": {
+        "Velocidad": 7,
+        "Destreza": 1,
+        "Fuerza": 7,
+        "Nivel": 5,
+        "Armadura": 10
+      }
+    },
+    "victorias": 1,
+    "dmgInfligido": 216,
+    "dmgRecibido": 154,
+    "ratioDeDmg": 1.4,
+    "dmgPromedioPorTurno": 1.5,
+    "fecha": "2024-08-08T20:59:39.0572075-03:00"
   }
 ]

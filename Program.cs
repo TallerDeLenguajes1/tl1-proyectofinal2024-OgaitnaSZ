@@ -29,15 +29,6 @@ while(control){
                 gestion.guardarPersonajes(personajes,"PersonajesGuardados");
             }
 
-            //Mostrar personajes
-            Console.WriteLine("Participantes del torneo:");
-            foreach(Personaje personaje in personajes){
-                Random random = new Random();
-                //Asignar caracteristicas aleatorias
-                personaje.caracteristicas = fabrica.asignarCaracteristicas(random.Next(1, 10), random.Next(1, 5), random.Next(1, 10), random.Next(1, 10), random.Next(1, 10));
-                gestion.imprimirPersonaje(personaje);
-            }
-
             //Comenzar partida
             Console.WriteLine("━━━━━━ Comienza el torneo ━━━━━━");
             Torneo batalla = new Torneo();
