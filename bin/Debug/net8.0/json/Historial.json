@@ -348,5 +348,430 @@
     "ratioDeDmg": 6.84,
     "dmgPromedioPorTurno": 9.43,
     "fecha": "2024-08-10T14:24:19.3989529-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Assassin",
+        "Nombre": "Ekko",
+        "Apodo": "el Joven que Fragment\u00F3 el Tiempo",
+        "fechaNacimiento": "1937-09-05T00:00:00",
+        "Edad": 87
+      },
+      "caracteristicas": {
+        "Velocidad": 1,
+        "Destreza": 4,
+        "Fuerza": 6,
+        "Nivel": 9,
+        "Armadura": 10,
+        "Salud": 110
+      }
+    },
+    "victorias": 10,
+    "dmgInfligido": 468,
+    "dmgRecibido": 30,
+    "ratioDeDmg": 15.6,
+    "dmgPromedioPorTurno": 16.14,
+    "fecha": "2024-08-10T14:24:27.5962703-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Assassin",
+        "Nombre": "Ekko",
+        "Apodo": "el Joven que Fragment\u00F3 el Tiempo",
+        "fechaNacimiento": "1937-09-05T00:00:00",
+        "Edad": 87
+      },
+      "caracteristicas": {
+        "Velocidad": 1,
+        "Destreza": 4,
+        "Fuerza": 6,
+        "Nivel": 9,
+        "Armadura": 10,
+        "Salud": 100
+      }
+    },
+    "victorias": 11,
+    "dmgInfligido": 102,
+    "dmgRecibido": 4,
+    "ratioDeDmg": 25.5,
+    "dmgPromedioPorTurno": 12.75,
+    "fecha": "2024-08-10T15:43:05.7857072-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Assassin",
+        "Nombre": "Nidalee",
+        "Apodo": "la Cazadora Salvaje",
+        "fechaNacimiento": "1924-04-08T00:00:00",
+        "Edad": 100
+      },
+      "caracteristicas": {
+        "Velocidad": 2,
+        "Destreza": 3,
+        "Fuerza": 9,
+        "Nivel": 1,
+        "Armadura": 10,
+        "Salud": 100
+      }
+    },
+    "victorias": 2,
+    "dmgInfligido": 312,
+    "dmgRecibido": 123,
+    "ratioDeDmg": 2.54,
+    "dmgPromedioPorTurno": 1.06,
+    "fecha": "2024-08-10T15:43:05.8040521-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Assassin",
+        "Nombre": "Ekko",
+        "Apodo": "el Joven que Fragment\u00F3 el Tiempo",
+        "fechaNacimiento": "1937-09-05T00:00:00",
+        "Edad": 87
+      },
+      "caracteristicas": {
+        "Velocidad": 1,
+        "Destreza": 4,
+        "Fuerza": 6,
+        "Nivel": 9,
+        "Armadura": 10,
+        "Salud": 100
+      }
+    },
+    "victorias": 12,
+    "dmgInfligido": 442,
+    "dmgRecibido": 43,
+    "ratioDeDmg": 10.28,
+    "dmgPromedioPorTurno": 11.33,
+    "fecha": "2024-08-10T15:43:58.2290109-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Assassin",
+        "Nombre": "Ekko",
+        "Apodo": "el Joven que Fragment\u00F3 el Tiempo",
+        "fechaNacimiento": "1937-09-05T00:00:00",
+        "Edad": 87
+      },
+      "caracteristicas": {
+        "Velocidad": 1,
+        "Destreza": 4,
+        "Fuerza": 6,
+        "Nivel": 9,
+        "Armadura": 10,
+        "Salud": 100
+      }
+    },
+    "victorias": 13,
+    "dmgInfligido": 447,
+    "dmgRecibido": 77,
+    "ratioDeDmg": 5.81,
+    "dmgPromedioPorTurno": 9.12,
+    "fecha": "2024-08-10T15:44:09.838026-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Assassin",
+        "Nombre": "Ekko",
+        "Apodo": "el Joven que Fragment\u00F3 el Tiempo",
+        "fechaNacimiento": "1937-09-05T00:00:00",
+        "Edad": 87
+      },
+      "caracteristicas": {
+        "Velocidad": 1,
+        "Destreza": 4,
+        "Fuerza": 6,
+        "Nivel": 9,
+        "Armadura": 10,
+        "Salud": 100
+      }
+    },
+    "victorias": 14,
+    "dmgInfligido": 357,
+    "dmgRecibido": 32,
+    "ratioDeDmg": 11.16,
+    "dmgPromedioPorTurno": 12.75,
+    "fecha": "2024-08-10T16:44:01.3364181-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Assassin",
+        "Nombre": "Ekko",
+        "Apodo": "el Joven que Fragment\u00F3 el Tiempo",
+        "fechaNacimiento": "1937-09-05T00:00:00",
+        "Edad": 87
+      },
+      "caracteristicas": {
+        "Velocidad": 1,
+        "Destreza": 4,
+        "Fuerza": 6,
+        "Nivel": 9,
+        "Armadura": 10,
+        "Salud": 110
+      }
+    },
+    "victorias": 15,
+    "dmgInfligido": 342,
+    "dmgRecibido": 37,
+    "ratioDeDmg": 9.24,
+    "dmgPromedioPorTurno": 13.15,
+    "fecha": "2024-08-10T16:44:20.816824-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Assassin",
+        "Nombre": "Nidalee",
+        "Apodo": "la Cazadora Salvaje",
+        "fechaNacimiento": "1924-04-08T00:00:00",
+        "Edad": 100
+      },
+      "caracteristicas": {
+        "Velocidad": 2,
+        "Destreza": 3,
+        "Fuerza": 9,
+        "Nivel": 1,
+        "Armadura": 10,
+        "Salud": 100
+      }
+    },
+    "victorias": 3,
+    "dmgInfligido": 101,
+    "dmgRecibido": 19,
+    "ratioDeDmg": 5.32,
+    "dmgPromedioPorTurno": 1.1,
+    "fecha": "2024-08-10T16:44:20.8356422-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Fighter",
+        "Nombre": "Urgot",
+        "Apodo": "el Temerario",
+        "fechaNacimiento": "1948-10-01T00:00:00",
+        "Edad": 76
+      },
+      "caracteristicas": {
+        "Velocidad": 1,
+        "Destreza": 3,
+        "Fuerza": 9,
+        "Nivel": 5,
+        "Armadura": 10,
+        "Salud": 110
+      }
+    },
+    "victorias": 1,
+    "dmgInfligido": 444,
+    "dmgRecibido": 85,
+    "ratioDeDmg": 5.22,
+    "dmgPromedioPorTurno": 7.79,
+    "fecha": "2024-08-10T17:06:32.5498663-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Fighter",
+        "Nombre": "Vi",
+        "Apodo": "la Vigilante de Pilt\u00F3ver",
+        "fechaNacimiento": "1742-11-05T00:00:00",
+        "Edad": 282
+      },
+      "caracteristicas": {
+        "Velocidad": 1,
+        "Destreza": 3,
+        "Fuerza": 9,
+        "Nivel": 6,
+        "Armadura": 10,
+        "Salud": 110
+      }
+    },
+    "victorias": 1,
+    "dmgInfligido": 591,
+    "dmgRecibido": 109,
+    "ratioDeDmg": 5.42,
+    "dmgPromedioPorTurno": 10.19,
+    "fecha": "2024-08-10T17:06:44.9288748-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Assassin",
+        "Nombre": "Ekko",
+        "Apodo": "el Joven que Fragment\u00F3 el Tiempo",
+        "fechaNacimiento": "1937-09-05T00:00:00",
+        "Edad": 87
+      },
+      "caracteristicas": {
+        "Velocidad": 5,
+        "Destreza": 4,
+        "Fuerza": 7,
+        "Nivel": 9,
+        "Armadura": 10,
+        "Salud": 110
+      }
+    },
+    "victorias": 16,
+    "dmgInfligido": 244,
+    "dmgRecibido": 75,
+    "ratioDeDmg": 3.25,
+    "dmgPromedioPorTurno": 17.43,
+    "fecha": "2024-08-10T17:29:01.8735953-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Assassin",
+        "Nombre": "Qiyana",
+        "Apodo": "La Emperatriz de los Elementos",
+        "fechaNacimiento": "1990-03-28T00:00:00",
+        "Edad": 34
+      },
+      "caracteristicas": {
+        "Velocidad": 9,
+        "Destreza": 3,
+        "Fuerza": 9,
+        "Nivel": 8,
+        "Armadura": 10,
+        "Salud": 100
+      }
+    },
+    "victorias": 2,
+    "dmgInfligido": 217,
+    "dmgRecibido": 85,
+    "ratioDeDmg": 2.55,
+    "dmgPromedioPorTurno": 13.56,
+    "fecha": "2024-08-10T17:29:56.4821299-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Mage",
+        "Nombre": "Syndra",
+        "Apodo": "la Soberana Oscura",
+        "fechaNacimiento": "1770-05-01T00:00:00",
+        "Edad": 254
+      },
+      "caracteristicas": {
+        "Velocidad": 4,
+        "Destreza": 3,
+        "Fuerza": 6,
+        "Nivel": 6,
+        "Armadura": 10,
+        "Salud": 110
+      }
+    },
+    "victorias": 1,
+    "dmgInfligido": 222,
+    "dmgRecibido": 175,
+    "ratioDeDmg": 1.27,
+    "dmgPromedioPorTurno": 6.17,
+    "fecha": "2024-08-10T17:29:56.5026039-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Fighter",
+        "Nombre": "Volibear",
+        "Apodo": "la Tormenta Implacable",
+        "fechaNacimiento": "1873-03-26T00:00:00",
+        "Edad": 151
+      },
+      "caracteristicas": {
+        "Velocidad": 7,
+        "Destreza": 3,
+        "Fuerza": 4,
+        "Nivel": 3,
+        "Armadura": 8,
+        "Salud": 110
+      }
+    },
+    "victorias": 1,
+    "dmgInfligido": 100,
+    "dmgRecibido": 45,
+    "ratioDeDmg": 2.22,
+    "dmgPromedioPorTurno": 1.47,
+    "fecha": "2024-08-10T17:29:56.5128963-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Fighter",
+        "Nombre": "Vi",
+        "Apodo": "la Vigilante de Pilt\u00F3ver",
+        "fechaNacimiento": "1742-11-05T00:00:00",
+        "Edad": 282
+      },
+      "caracteristicas": {
+        "Velocidad": 2,
+        "Destreza": 3,
+        "Fuerza": 9,
+        "Nivel": 9,
+        "Armadura": 2,
+        "Salud": 110
+      }
+    },
+    "victorias": 2,
+    "dmgInfligido": 231,
+    "dmgRecibido": 24,
+    "ratioDeDmg": 9.62,
+    "dmgPromedioPorTurno": 14.44,
+    "fecha": "2024-08-10T17:34:25.0948697-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Fighter",
+        "Nombre": "Urgot",
+        "Apodo": "el Temerario",
+        "fechaNacimiento": "1948-10-01T00:00:00",
+        "Edad": 76
+      },
+      "caracteristicas": {
+        "Velocidad": 2,
+        "Destreza": 3,
+        "Fuerza": 9,
+        "Nivel": 5,
+        "Armadura": 10,
+        "Salud": 110
+      }
+    },
+    "victorias": 2,
+    "dmgInfligido": 216,
+    "dmgRecibido": 103,
+    "ratioDeDmg": 2.1,
+    "dmgPromedioPorTurno": 8.31,
+    "fecha": "2024-08-10T17:34:25.1155601-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Mage",
+        "Nombre": "Syndra",
+        "Apodo": "la Soberana Oscura",
+        "fechaNacimiento": "1770-05-01T00:00:00",
+        "Edad": 254
+      },
+      "caracteristicas": {
+        "Velocidad": 2,
+        "Destreza": 3,
+        "Fuerza": 3,
+        "Nivel": 7,
+        "Armadura": 5,
+        "Salud": 110
+      }
+    },
+    "victorias": 2,
+    "dmgInfligido": 105,
+    "dmgRecibido": 74,
+    "ratioDeDmg": 1.42,
+    "dmgPromedioPorTurno": 3.89,
+    "fecha": "2024-08-10T17:34:25.124606-03:00"
   }
 ]

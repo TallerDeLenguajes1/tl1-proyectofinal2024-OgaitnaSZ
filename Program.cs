@@ -57,6 +57,7 @@ while(control){
                     if(opcion == 1){
                         control2 = false;
                     }else if(opcion == 2){
+                        Console.WriteLine("Saliendo del juego...");
                         control2 = false;
                         control = false;
                     }

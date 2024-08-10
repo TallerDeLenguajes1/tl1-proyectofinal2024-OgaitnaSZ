@@ -36,7 +36,6 @@ namespace Historial{
                         }
                     }
                 }
-
                 historalCompleto.Add(partida);
                 string jsonString = JsonSerializer.Serialize(historalCompleto, new JsonSerializerOptions { WriteIndented = true});
                 File.WriteAllText("json/"+nombreArchivo+".json", jsonString);
