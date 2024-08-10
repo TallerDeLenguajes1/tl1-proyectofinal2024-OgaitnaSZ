@@ -2,12 +2,13 @@ using Personajes;
 using GestionPersonajes;
 using Historial;
 using System.Threading;
+using MnesajesProyecto;
 
 namespace Batalla{
     public class Torneo{
         public void battleRoyale(List<Personaje> personajes){
             PersonajesJson gestion = new PersonajesJson();  
-            HistorialJson historial = new HistorialJson(); 
+            HistorialJson historial = new HistorialJson();
             //Mostrar personajes
             Console.WriteLine("Participantes del torneo:");
             gestion.imprimirListaDePersonajes(personajes);
@@ -15,7 +16,7 @@ namespace Batalla{
             int ronda = 1;
             string nombreApuesta = realizarApuesta(personajes);
 
-            while(personajes.Count()>1){         //Mientras haya mas de un personaje en pie...
+            while(personajes.Count() > 1){         //Mientras haya mas de un personaje en pie...
                 Random random = new Random();
                 int pos1;
                 int pos2;
@@ -25,8 +26,10 @@ namespace Batalla{
                 } while (pos1 == pos2);
                 Personaje personaje1 = personajes[pos1];     //Personajes aleatorios
                 Personaje personaje2 = personajes[pos2];
+                Console.ForegroundColor = ConsoleColor.DarkBlue;
                 Console.WriteLine("\n━━━━━ Ronda "+ ronda +": "+ personaje1.datos.Nombre+" VS "+personaje2.datos.Nombre + " ━━━━━");
-                //Thread.Sleep(3000); //Agregar delay entre rondas
+                Console.ResetColor();
+                //Thread.Sleep(1000); //Agregar delay entre rondas
                 int turno = 0;
                 do{
                     if(turno%2 == 0){
@@ -45,7 +48,7 @@ namespace Batalla{
                     publicarGanador(personaje2, personaje1);
                     personajes.Remove(personaje1);
                 }
-                //Thread.Sleep(3000); //Agregar delay entre rondas
+                //Thread.Sleep(3000); //Agregar delay entre enfrentamientos
                 ronda++;
             }
             gestion.mostarGanador(personajes[0], nombreApuesta);
@@ -85,8 +88,10 @@ namespace Batalla{
                 } while (pos1 == pos2);
                 Personaje personaje1 = equipo1[pos1];     //Personajes aleatorios
                 Personaje personaje2 = equipo2[pos2];
+                Console.ForegroundColor = ConsoleColor.DarkBlue;
                 Console.WriteLine("\n━━━━━ Ronda "+ ronda +": "+ personaje1.datos.Nombre+" VS "+personaje2.datos.Nombre + " ━━━━━");
-                //Thread.Sleep(3000); //Agregar delay entre rondas
+                Console.ResetColor();
+                //Thread.Sleep(1000); //Agregar delay entre rondas
                 int turno = 0;
                 do{
                     if(turno%2 == 0){
@@ -105,7 +110,7 @@ namespace Batalla{
                     publicarGanador(personaje2, personaje1);
                     equipo1.Remove(personaje1);
                 }
-                //Thread.Sleep(3000); //Agregar delay entre rondas
+                //Thread.Sleep(3000); //Agregar delay entre enfrentamientos
                 ronda++;
             }
   
@@ -125,7 +130,7 @@ namespace Batalla{
         }
         //Funciones para peleas
         public void atacar(Personaje personaje1, Personaje personaje2){
-            Console.WriteLine(personaje1.datos.Nombre + " ataca a " + personaje2.datos.Nombre);
+            Console.Write(personaje1.datos.Nombre + " ⚔️  " + personaje2.datos.Nombre);
             Random random = new Random();
             int ataque;
             int efectividad;
@@ -135,20 +140,23 @@ namespace Batalla{
             efectividad = random.Next(1,100);
             defensa = personaje2.caracteristicas.Armadura*personaje2.caracteristicas.Velocidad;
             dmg = ((ataque*efectividad)-defensa)/500;
-            string textoDmg = personaje2.datos.Nombre+" sufre "+dmg+" de dano ("+personaje2.caracteristicas.Salud+" -> ";
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write(" ("+personaje2.caracteristicas.Salud+" -> ");
             personaje1.caracteristicas.dmgInfligido += dmg;
             personaje2.caracteristicas.dmgRecibido += dmg;
             personaje2.caracteristicas.Salud -= dmg;
-            Console.WriteLine(textoDmg+personaje2.caracteristicas.Salud+")");
-            Console.WriteLine("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
+            Console.WriteLine(personaje2.caracteristicas.Salud+")");
+            Console.ResetColor();
+            Console.WriteLine("─────────────────────────────────────");
             personaje1.caracteristicas.turnosJugados++;
             personaje2.caracteristicas.turnosJugados++;
             //Thread.Sleep(1000); //Agregar delay entre turnos
         }
         public void publicarGanador(Personaje personaje1, Personaje personaje2){
             Random random = new Random();
-            Console.WriteLine(personaje1.datos.Nombre+" es el vencedor!");
-            Console.WriteLine(personaje2.datos.Nombre+" queda fuera");
+            Mensajes mensaje = new();
+            mensaje.mensajeGanador(personaje1,personaje2);
+
             if(random.Next()%2==0){
                 personaje1.caracteristicas.Salud = 110;
                 Console.ForegroundColor = ConsoleColor.Green;

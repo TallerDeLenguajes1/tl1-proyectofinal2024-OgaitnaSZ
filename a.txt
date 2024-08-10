@@ -1,4 +1,1 @@
-
-Corregir menues de seleccion (Control que solo se acepten numeros)
-
-Optimizar codigo
+Siempre gana el mismo

@@ -61,23 +61,28 @@ namespace Historial{
         public void mostrarHistorial(){
             var ganadores = new List<Partida>();
             try{
-                ganadores = leerGanadores("historial");   
+                ganadores = leerGanadores("Historial");   
             }catch{
-                Console.WriteLine("Nno hay partidas recientes");
+                Console.WriteLine("No hay partidas recientes");
             }
+            int i = 1;
             foreach(Partida ganador in ganadores){
-                imprimirPartida(ganador);
+                imprimirPartida(ganador, i);
+                i++;
             }
         }
 
-        private void imprimirPartida(Partida partida){
+        private void imprimirPartida(Partida partida, int pos){
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.Write(pos+". ");
             Console.WriteLine(partida.personaje.datos.Nombre+","+partida.personaje.datos.Tipo);
-            Console.WriteLine("   Victorias: "+partida.victorias);
-            Console.WriteLine("   Dano infligido: "+partida.dmgInfligido);
-            Console.WriteLine("   Dano recibido: "+partida.dmgRecibido);
-            Console.WriteLine("   Ratio de dano: "+partida.ratioDeDmg);
-            Console.WriteLine("   Dano promedio por turno: "+partida.dmgPromedioPorTurno);
-            Console.WriteLine("   Fecha: "+partida.fecha.ToShortDateString());
+            Console.ResetColor();
+            Console.WriteLine("    Victorias: "+partida.victorias);
+            Console.WriteLine("    Dano infligido: "+partida.dmgInfligido);
+            Console.WriteLine("    Dano recibido: "+partida.dmgRecibido);
+            Console.WriteLine("    Ratio de dano: "+partida.ratioDeDmg);
+            Console.WriteLine("    Dano promedio por turno: "+partida.dmgPromedioPorTurno);
+            Console.WriteLine("    Fecha: "+partida.fecha.ToShortDateString());
             Console.WriteLine("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
         }
     }

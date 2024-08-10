@@ -141,7 +141,5 @@ namespace GestionPersonajes{
             return personajes;
         }
 
-
     }
-
 }

@@ -4,65 +4,75 @@ using Creador;
 using GestionPersonajes;
 using Historial;
 using Batalla;
-using GestionarProyecto;
+using MnesajesProyecto;
 
 var personajes = new List<Personaje>();  //Lista de personajes
 HistorialJson historial = new();
 PersonajesJson gestion = new();
 FabricaDePersonajes fabrica = new();
-Gestionar gestionar = new();
+Mensajes mensaje = new();
 
 //Inicio del juego
-Console.WriteLine("Bienvenidos a League of Legends Battle Royale");
-gestionar.menuOpciones();
+mensaje.mensajeBienvenida();
 bool control = true;
-int opcion;
 while(control){
+    mensaje.menuOpciones();
+    int opcion;
+    bool control2 = true;
     if(int.TryParse(Console.ReadLine(), out opcion)){
         switch(opcion){
-        case 0:
+        case 1:
             //Carga de personajes
             personajes = await gestion.cargarPersonajes();
 
             //Comenzar partida
             Console.WriteLine("━━━━━━ Comienza el torneo ━━━━━━");
             Torneo batalla = new();
-            bool controlModoDeJuego = true;
             while(control){
-                gestionar.modoDeJuego();
-                while(controlModoDeJuego){
+                mensaje.modoDeJuego();
+                while(control2){
                     if(int.TryParse(Console.ReadLine(), out opcion)){
-                        if(opcion == 0){
+                        if(opcion == 1){
                             batalla.battleRoyale(personajes);
-                            controlModoDeJuego = false;
+                            control2 = false;
                             control = false;
-                        }else if(opcion == 1){
+                        }else if(opcion == 2){
                             batalla.peleaEquipos(personajes);
-                            controlModoDeJuego = false;
+                            control2 = false;
                             control = false;
                         }else{
-                            Console.Write("Seleccione una opcion valida: ");
+                            mensaje.errorOpcion();
                         }
                     }else{
-                        Console.Write("Seleccione una opcion valida:");
+                        mensaje.errorOpcion();
                     }
                 }
             }
-        break;
-        case 1:
-            historial.mostrarHistorial();
-            control = false;
-        break;
+            break;
         case 2:
+            historial.mostrarHistorial();
+            mensaje.historial();
+            while(control2){
+                if(int.TryParse(Console.ReadLine(), out opcion)){
+                    if(opcion == 1){
+                        control2 = false;
+                    }else if(opcion == 2){
+                        control2 = false;
+                        control = false;
+                    }
+                }
+            }
+            break;
+        case 3:
             Console.WriteLine("Saliendo del juego...");
             control = false;
-        break;
+            break;
         default:
-            Console.Write("Seleccione una opcion valida:");
+            mensaje.errorOpcion();
         break;
     }
     }else{
-        Console.Write("Seleccione una opcion valida: ");
+        mensaje.errorOpcion();
     }
 }
 
