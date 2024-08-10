@@ -29,7 +29,7 @@ namespace GestionarProyecto {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.Write("1. ");
             Console.ResetColor();
-            Console.Write("Por equipos (5 vs 5)       ┃\n┃");
+            Console.Write("Por equipos (5 vs 5)       ┃\n");
             Console.WriteLine("┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
         }
     }

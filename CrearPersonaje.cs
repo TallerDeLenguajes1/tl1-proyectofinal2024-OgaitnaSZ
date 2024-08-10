@@ -85,7 +85,7 @@ namespace Creador {
             caracteristicas.Fuerza = fuerza;
             caracteristicas.Nivel = nivel;
             caracteristicas.Armadura = armadura;
-            caracteristicas.salud = 100;
+            caracteristicas.Salud = 100;
             return caracteristicas;
         }
     }

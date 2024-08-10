@@ -1,0 +1,4 @@
+
+Corregir menues de seleccion (Control que solo se acepten numeros)
+
+Optimizar codigo

@@ -30,7 +30,11 @@ namespace Personajes{
             get => armadura;
             set => armadura = value;
         }
-        public int salud;
+        private int salud;
+        public int Salud{
+            get => salud;
+            set => salud = value;
+        }
         //Agregados
         public int dmgInfligido;
         public int dmgRecibido;

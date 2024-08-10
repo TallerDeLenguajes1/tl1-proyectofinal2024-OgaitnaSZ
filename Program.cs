@@ -7,10 +7,10 @@ using Batalla;
 using GestionarProyecto;
 
 var personajes = new List<Personaje>();  //Lista de personajes
-HistorialJson historial = new HistorialJson();
-PersonajesJson gestion = new PersonajesJson();
-FabricaDePersonajes fabrica = new FabricaDePersonajes();
-Gestionar gestionar = new Gestionar();
+HistorialJson historial = new();
+PersonajesJson gestion = new();
+FabricaDePersonajes fabrica = new();
+Gestionar gestionar = new();
 
 //Inicio del juego
 Console.WriteLine("Bienvenidos a League of Legends Battle Royale");
@@ -18,32 +18,34 @@ gestionar.menuOpciones();
 bool control = true;
 int opcion;
 while(control){
-    opcion = int.Parse(Console.ReadLine());
-    switch(opcion){
+    if(int.TryParse(Console.ReadLine(), out opcion)){
+        switch(opcion){
         case 0:
             //Carga de personajes
-            if(gestion.existe("json/PersonajesGuardados.json")){  //Verificar si existen personajes
-                personajes = gestion.leerPersonajes("PersonajesGuardados");  
-            }else{   //Sino, genera personajes nuevos
-                personajes = await fabrica.cargarPersonajes();
-                gestion.guardarPersonajes(personajes,"PersonajesGuardados");
-            }
+            personajes = await gestion.cargarPersonajes();
 
             //Comenzar partida
             Console.WriteLine("━━━━━━ Comienza el torneo ━━━━━━");
-            Torneo batalla = new Torneo();
+            Torneo batalla = new();
             bool controlModoDeJuego = true;
             while(control){
                 gestionar.modoDeJuego();
-                opcion = int.Parse(Console.ReadLine());
-                if(opcion == 0){
-                    batalla.battleRoyale(personajes);
-                    controlModoDeJuego = false;
-                    control = false;
-                }else{
-                    batalla.peleaEquipos(personajes);
-                    controlModoDeJuego = false;
-                    control = false;
+                while(controlModoDeJuego){
+                    if(int.TryParse(Console.ReadLine(), out opcion)){
+                        if(opcion == 0){
+                            batalla.battleRoyale(personajes);
+                            controlModoDeJuego = false;
+                            control = false;
+                        }else if(opcion == 1){
+                            batalla.peleaEquipos(personajes);
+                            controlModoDeJuego = false;
+                            control = false;
+                        }else{
+                            Console.Write("Seleccione una opcion valida: ");
+                        }
+                    }else{
+                        Console.Write("Seleccione una opcion valida:");
+                    }
                 }
             }
         break;
@@ -56,8 +58,11 @@ while(control){
             control = false;
         break;
         default:
-            Console.WriteLine("Seleccione una opcion valida:");
+            Console.Write("Seleccione una opcion valida:");
         break;
+    }
+    }else{
+        Console.Write("Seleccione una opcion valida: ");
     }
 }
 

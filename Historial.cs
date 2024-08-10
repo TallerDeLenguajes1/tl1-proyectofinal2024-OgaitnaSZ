@@ -41,8 +41,8 @@ namespace Historial{
                 string jsonString = JsonSerializer.Serialize(historalCompleto, new JsonSerializerOptions { WriteIndented = true});
                 File.WriteAllText("json/"+nombreArchivo+".json", jsonString);
                 Console.WriteLine("Partida guardada correctamente");
-            }catch{
-                Console.WriteLine("No se pudo guardar la partida");
+            }catch(Exception ex){
+                Console.WriteLine("No se pudo guardar la partida: "+ ex);
             }
         }
 

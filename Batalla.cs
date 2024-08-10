@@ -35,13 +35,15 @@ namespace Batalla{
                         atacar(personaje2,personaje1);
                     }
                     turno++;
-                }while(personaje1.caracteristicas.salud>0 && personaje2.caracteristicas.salud>0);
+                }while(personaje1.caracteristicas.Salud>0 && personaje2.caracteristicas.Salud>0);
                 
                 //Comprobar ganador
-                if(personaje1.caracteristicas.salud>personaje2.caracteristicas.salud){
-                    publicarGanador(personaje1, personaje2, personajes);
+                if(personaje1.caracteristicas.Salud>personaje2.caracteristicas.Salud){
+                    publicarGanador(personaje1, personaje2);
+                    personajes.Remove(personaje2);
                 }else{
-                    publicarGanador(personaje2, personaje1, personajes);
+                    publicarGanador(personaje2, personaje1);
+                    personajes.Remove(personaje1);
                 }
                 //Thread.Sleep(3000); //Agregar delay entre rondas
                 ronda++;
@@ -71,10 +73,7 @@ namespace Batalla{
             }
 
             //Mostrar equipos
-            Console.WriteLine("Equipo 1:");
-            gestion.imprimirListaDePersonajes(equipo1);
-            Console.WriteLine("Equipo 2:");
-            gestion.imprimirListaDePersonajes(equipo2);
+            gestion.imprimirEquipos(equipo1,equipo2);
 
             int ronda = 1;
             while(equipo1.Count()>1 && equipo2.Count()>1){  
@@ -96,16 +95,14 @@ namespace Batalla{
                         atacar(personaje2,personaje1);
                     }
                     turno++;
-                }while(personaje1.caracteristicas.salud>0 && personaje2.caracteristicas.salud>0);
+                }while(personaje1.caracteristicas.Salud>0 && personaje2.caracteristicas.Salud>0);
                 
                 //Comprobar ganador
-                if(personaje1.caracteristicas.salud>personaje2.caracteristicas.salud){
-                    Console.WriteLine(personaje1.datos.Nombre+" es el vencedor!");
-                    Console.WriteLine(personaje2.datos.Nombre+" queda fuera");
+                if(personaje1.caracteristicas.Salud>personaje2.caracteristicas.Salud){
+                    publicarGanador(personaje1,personaje2);
                     equipo2.Remove(personaje2);
                 }else{
-                    Console.WriteLine(personaje2.datos.Nombre+" es el vencedor!");
-                    Console.WriteLine(personaje1.datos.Nombre+" queda fuera");
+                    publicarGanador(personaje2, personaje1);
                     equipo1.Remove(personaje1);
                 }
                 //Thread.Sleep(3000); //Agregar delay entre rondas
@@ -113,21 +110,19 @@ namespace Batalla{
             }
   
             if(equipo1.Count()>equipo2.Count()){
-                Console.WriteLine("Equipo 1 ganador\nLos integrantes del equipo son:");
+                Console.WriteLine("Equipo 1 ganador\nLos integrantes en pie del equipo son:");
                 foreach(Personaje personaje in equipo1){
                     gestion.imprimirPersonaje(personaje);
                     historial.GuardarGanador(personaje,"Historial");
                 }
             }else{
-                Console.WriteLine("Equipo 2 ganador\nLos integrantes del equipo son:");
+                Console.WriteLine("Equipo 2 ganador\nLos integrantes en pie del equipo son:");
                 foreach(Personaje personaje in equipo2){
                     gestion.imprimirPersonaje(personaje);
                     historial.GuardarGanador(personaje,"Historial");
                 }
             }
         }
-
-
         //Funciones para peleas
         public void atacar(Personaje personaje1, Personaje personaje2){
             Console.WriteLine(personaje1.datos.Nombre + " ataca a " + personaje2.datos.Nombre);
@@ -140,31 +135,33 @@ namespace Batalla{
             efectividad = random.Next(1,100);
             defensa = personaje2.caracteristicas.Armadura*personaje2.caracteristicas.Velocidad;
             dmg = ((ataque*efectividad)-defensa)/500;
-            string textoDmg = personaje2.datos.Nombre+" sufre "+dmg+" de dano ("+personaje2.caracteristicas.salud+" -> ";
+            string textoDmg = personaje2.datos.Nombre+" sufre "+dmg+" de dano ("+personaje2.caracteristicas.Salud+" -> ";
             personaje1.caracteristicas.dmgInfligido += dmg;
             personaje2.caracteristicas.dmgRecibido += dmg;
-            personaje2.caracteristicas.salud -= dmg;
-            Console.WriteLine(textoDmg+personaje2.caracteristicas.salud+")");
+            personaje2.caracteristicas.Salud -= dmg;
+            Console.WriteLine(textoDmg+personaje2.caracteristicas.Salud+")");
             Console.WriteLine("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
             personaje1.caracteristicas.turnosJugados++;
             personaje2.caracteristicas.turnosJugados++;
             //Thread.Sleep(1000); //Agregar delay entre turnos
         }
-        public void publicarGanador(Personaje personaje1, Personaje personaje2, List<Personaje> personajes){
+        public void publicarGanador(Personaje personaje1, Personaje personaje2){
             Random random = new Random();
             Console.WriteLine(personaje1.datos.Nombre+" es el vencedor!");
             Console.WriteLine(personaje2.datos.Nombre+" queda fuera");
-            personajes.Remove(personaje2);
             if(random.Next()%2==0){
-                personaje1.caracteristicas.salud = 110;
-                Console.WriteLine("+10 de salud para "+personaje1.datos.Nombre);
+                personaje1.caracteristicas.Salud = 110;
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("+10 de Salud para "+personaje1.datos.Nombre);
+                Console.ResetColor();
             }else{
                 personaje1.caracteristicas.Armadura =+ 10;
-                personaje1.caracteristicas.salud = 100;
+                personaje1.caracteristicas.Salud = 100;
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("+10 de armadura para "+personaje1.datos.Nombre); 
+                Console.ResetColor();
             }
         }
-
         public string realizarApuesta(List<Personaje> personajes){
             Console.WriteLine("Escribe el nombre del personaje por el que apuestas:");
             bool encontrado;
@@ -186,6 +183,5 @@ namespace Batalla{
             }while(!encontrado);
             return nombreApuesta;
         } 
-
     }
 }
