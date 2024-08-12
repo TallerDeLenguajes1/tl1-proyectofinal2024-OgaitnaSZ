@@ -1,57 +1,45 @@
-﻿using System;
-using Personajes;
-using Creador;
-using GestionPersonajes;
+﻿using GestionPersonajes;
 using Historial;
 using Batalla;
-using MnesajesProyecto;
+using MensajesProyecto;
 
-var personajes = new List<Personaje>();  //Lista de personajes
-HistorialJson historial = new();
-PersonajesJson gestion = new();
-FabricaDePersonajes fabrica = new();
-Mensajes mensaje = new();
+Mensajes.mensajeBienvenida(); //Mensaje de bienvenida
 
-//Inicio del juego
-mensaje.mensajeBienvenida();
 bool control = true;
 while(control){
-    mensaje.menuOpciones();
+    Mensajes.menuOpciones();
     int opcion;
     bool control2 = true;
     if(int.TryParse(Console.ReadLine(), out opcion)){
         switch(opcion){
         case 1:
-            //Carga de personajes
-            personajes = await gestion.cargarPersonajes();
+            var personajes = await PersonajesJson.cargarPersonajes();  //Cargar lista de personajes
 
-            //Comenzar partida
-            Console.WriteLine("━━━━━━ Comienza el torneo ━━━━━━");
-            Torneo batalla = new();
             while(control){
-                mensaje.modoDeJuego();
+                Mensajes.modoDeJuego();  //Seleccion de modo de juego
+
                 while(control2){
                     if(int.TryParse(Console.ReadLine(), out opcion)){
                         if(opcion == 1){
-                            batalla.battleRoyale(personajes);
+                            Torneo.battleRoyale(personajes);
                             control2 = false;
                             control = false;
                         }else if(opcion == 2){
-                            batalla.peleaEquipos(personajes);
+                            Torneo.peleaEquipos(personajes);
                             control2 = false;
                             control = false;
                         }else{
-                            mensaje.errorOpcion();
+                            Mensajes.errorOpcion();
                         }
                     }else{
-                        mensaje.errorOpcion();
+                        Mensajes.errorOpcion();
                     }
                 }
             }
             break;
         case 2:
-            historial.mostrarHistorial();
-            mensaje.historial();
+            HistorialJson.mostrarHistorial();
+            Mensajes.historial();
             while(control2){
                 if(int.TryParse(Console.ReadLine(), out opcion)){
                     if(opcion == 1){
@@ -69,11 +57,11 @@ while(control){
             control = false;
             break;
         default:
-            mensaje.errorOpcion();
+            Mensajes.errorOpcion();
         break;
     }
     }else{
-        mensaje.errorOpcion();
+        Mensajes.errorOpcion();
     }
 }
 

@@ -1,27 +1,25 @@
 using Personajes;
 using GestionPersonajes;
 using Historial;
-using MnesajesProyecto;
+using MensajesProyecto;
 using Creador;
 
 namespace Batalla{
-    public class Torneo{
-        public void battleRoyale(List<Personaje> personajes){
-            PersonajesJson gestion = new PersonajesJson();  
-            HistorialJson historial = new HistorialJson();
-
-            AsignarCaracteristicas(personajes); //Reasignar caracteristicas
+    public class Torneo(){
+        public static void battleRoyale(List<Personaje> personajes){
+            Console.WriteLine("━━━━━━ Battle Royale ━━━━━━");
+            AsignarCaracteristicas(personajes); //Reasignar caracteristicas aleatorias
 
             //Mostrar personajes
             Console.WriteLine("Participantes del torneo:");
-            gestion.imprimirListaDePersonajes(personajes);
+            PersonajesJson.imprimirListaDePersonajes(personajes);
 
             int ronda = 1;
             int pos1;
             int pos2;
             string nombreApuesta = RealizarApuesta(personajes);
 
-            while(personajes.Count() > 1){         //Mientras haya mas de un personaje en pie...
+            while(personajes.Count() > 1){    //Mientras haya mas de un personaje en pie...
                 Random random = new Random();
                 do{
                     pos1 = random.Next(personajes.Count());
@@ -32,11 +30,12 @@ namespace Batalla{
                 Console.ForegroundColor = ConsoleColor.DarkBlue;
                 Console.WriteLine("\n━━━━━ Ronda "+ ronda +": "+ personaje1.datos.Nombre+" VS "+personaje2.datos.Nombre + " ━━━━━");
                 Console.ResetColor();
-                Thread.Sleep(3000); //Agregar delay entre enfrentamientos
-                Combatir(personaje1, personaje2);
+                //Thread.Sleep(3000); //Agregar delay entre enfrentamientos
+
+                Combatir(personaje1, personaje2); //Se enfrentan dos personajes hasta que gane uno
                 
                 //Comprobar ganador
-                if(personaje1.caracteristicas.Salud>personaje2.caracteristicas.Salud){
+                if(personaje1.caracteristicas.Salud > personaje2.caracteristicas.Salud){
                     PublicarGanador(personaje1, personaje2);
                     personajes.Remove(personaje2);
                 }else{
@@ -45,16 +44,14 @@ namespace Batalla{
                 }
                 ronda++;
             }
-            gestion.mostarGanador(personajes[0], nombreApuesta);
+            PersonajesJson.mostarGanador(personajes[0], nombreApuesta);
 
             //Guardar datos de ganador en el historial        
-            historial.GuardarGanador(personajes[0],"Historial");
+            HistorialJson.GuardarGanador(personajes[0],"Historial");
         }
 
-        public void peleaEquipos(List<Personaje> personajes){
-            PersonajesJson gestion = new PersonajesJson();  
-            HistorialJson historial = new HistorialJson();
-            
+        public static void peleaEquipos(List<Personaje> personajes){
+            Console.WriteLine("━━━━━━ Pelea por Equipos ━━━━━━");
             AsignarCaracteristicas(personajes); //Reasignar caracteristicas
 
             var equipo1 = new List<Personaje>();
@@ -74,7 +71,7 @@ namespace Batalla{
             }
 
             //Mostrar equipos
-            gestion.imprimirEquipos(equipo1,equipo2);
+            PersonajesJson.imprimirEquipos(equipo1,equipo2);
 
             int pos1 = 0;
             int pos2 = 0;
@@ -84,41 +81,45 @@ namespace Batalla{
                 Console.ForegroundColor = ConsoleColor.DarkBlue;
                 Console.WriteLine("\n━━━━━ "+ personaje1.datos.Nombre+"(Equipo 1) VS "+personaje2.datos.Nombre + "(Equipo 2) ━━━━━");
                 Console.ResetColor();
-                Thread.Sleep(3000); //Agregar delay entre enfrentamientos
-                Combatir(personaje1, personaje2);
+                //Thread.Sleep(3000); //Agregar delay entre enfrentamientos
+
+                Combatir(personaje1, personaje2);  //Se enfrentan dos personajes hasta que gane uno
                 
                 //Comprobar ganador
                 if(personaje1.caracteristicas.Salud>personaje2.caracteristicas.Salud){
                     PublicarGanador(personaje1,personaje2);
                     equipo2.Remove(personaje2);
                     pos1++;
-               }else{
+                }else{
                     PublicarGanador(personaje2, personaje1);
                     equipo1.Remove(personaje1);
                     pos2++;
-               }
-               if(pos1>=equipo1.Count() || pos2>=equipo2.Count()){
+                }
+                if(pos1 >= equipo1.Count() || pos2 >= equipo2.Count()){
                     pos1 = 0;
                     pos2 = 0;
                 }
             }
   
             if(equipo1.Count() > equipo2.Count()){
-                Console.WriteLine("Equipo 1 ganador\nLos integrantes en pie del equipo son:");
-                foreach(Personaje personaje in equipo1){
-                    gestion.imprimirPersonaje(personaje);
-                    historial.GuardarGanador(personaje,"Historial");
-                }
+                publicarEquipoGanador(equipo1, "1");
             }else{
-                Console.WriteLine("Equipo 2 ganador\nLos integrantes en pie del equipo son:");
-                foreach(Personaje personaje in equipo2){
-                    gestion.imprimirPersonaje(personaje);
-                    historial.GuardarGanador(personaje,"Historial");
-                }
+                publicarEquipoGanador(equipo2, "2");
             }
         }
 
         //Funciones para peleas
+        public static void Combatir(Personaje personaje1, Personaje personaje2){
+            int turno = 0;
+            do{
+                if(turno%2 == 0){
+                    Atacar(personaje1,personaje2);
+                }else{
+                    Atacar(personaje2,personaje1);
+                }
+                turno++;
+            }while(personaje1.caracteristicas.Salud>0 && personaje2.caracteristicas.Salud>0);
+        }
         public static void Atacar(Personaje personaje1, Personaje personaje2){
             Console.Write(personaje1.datos.Nombre + " ⚔️  " + personaje2.datos.Nombre);
             Random random = new Random();
@@ -142,17 +143,6 @@ namespace Batalla{
             personaje2.caracteristicas.turnosJugados++;
             //Thread.Sleep(1000); //Agregar delay entre turnos
         }
-        public void Combatir(Personaje personaje1, Personaje personaje2){
-            int turno = 0;
-            do{
-                if(turno%2 == 0){
-                    Atacar(personaje1,personaje2);
-                }else{
-                    Atacar(personaje2,personaje1);
-                }
-                turno++;
-            }while(personaje1.caracteristicas.Salud>0 && personaje2.caracteristicas.Salud>0);
-        }
         public static void AsignarCaracteristicas(List<Personaje> personajes){
             FabricaDePersonajes fab = new();
             Random random = new ();
@@ -162,8 +152,7 @@ namespace Batalla{
         }
         public static void PublicarGanador(Personaje personaje1, Personaje personaje2){
             Random random = new Random();
-            Mensajes mensaje = new();
-            mensaje.mensajeGanador(personaje1,personaje2);
+            Mensajes.mensajeGanador(personaje1,personaje2);
 
             if(random.Next()%2==0){
                 personaje1.caracteristicas.Salud = 110;
@@ -176,6 +165,17 @@ namespace Batalla{
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("+10 de armadura para "+personaje1.datos.Nombre); 
                 Console.ResetColor();
+            }
+        }
+        public static void publicarEquipoGanador(List<Personaje> equipo, string nombreEquipo){
+            Console.WriteLine($"━━━━━━ Equipo {nombreEquipo} Ganador ━━━━━━");
+            Console.WriteLine("Los integrantes en pie del equipo son:");
+            foreach(Personaje personaje in equipo){
+                PersonajesJson.imprimirPersonaje(personaje);
+                if(personaje.caracteristicas.dmgRecibido  == 0 ){
+                    personaje.caracteristicas.dmgRecibido = 1;
+                }
+                HistorialJson.GuardarGanador(personaje,"Historial");
             }
         }
         public static string RealizarApuesta(List<Personaje> personajes){

@@ -4,8 +4,8 @@ using Personajes;
 using Creador;
 
 namespace GestionPersonajes{
-    public class PersonajesJson{
-        public void guardarPersonajes(List<Personaje> personaje, string nombreArchivo){
+    public class PersonajesJson(){
+        public static void guardarPersonajes(List<Personaje> personaje, string nombreArchivo){
             try{
                 string jsonString = JsonSerializer.Serialize(personaje, new JsonSerializerOptions { WriteIndented = true });
                 File.WriteAllText("json/"+nombreArchivo+".json", jsonString);
@@ -14,23 +14,23 @@ namespace GestionPersonajes{
                 Console.WriteLine("No se pudieron guardar los personajes");
             }
         }
-        public List<Personaje> leerPersonajes(string nombreArchivo){
+        public static List<Personaje> leerPersonajes(string nombreArchivo){
             string json = File.ReadAllText("json/"+nombreArchivo+".json");
             var opciones = new JsonSerializerOptions{PropertyNameCaseInsensitive = true};
             return JsonSerializer.Deserialize<List<Personaje>>(json, opciones);
         }
-        public bool existe(string ruta){
+        public static bool existe(string ruta){
             if (File.Exists(ruta)){
                 return true;
             }else{return false;}
         }
 
-        public void imprimirListaDePersonajes(List<Personaje> personajes){
+        public static void imprimirListaDePersonajes(List<Personaje> personajes){
             foreach(Personaje personaje in personajes){
                 imprimirPersonaje(personaje);
             }
         }
-        public void imprimirEquipos(List<Personaje> equipo1, List<Personaje> equipo2){
+        public static void imprimirEquipos(List<Personaje> equipo1, List<Personaje> equipo2){
             Console.WriteLine("┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓");
             Console.WriteLine("┃                EQUIPO 1                ┃                  EQUIPO 2                 ┃");
             Console.WriteLine("┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
@@ -89,7 +89,7 @@ namespace GestionPersonajes{
                 Console.WriteLine("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
             }
         }
-        public void imprimirPersonaje(Personaje personaje){
+        public static void imprimirPersonaje(Personaje personaje){
             string[] datos = {
                 $"DATOS:",
                 $"    Tipo: {personaje.datos.Tipo}",
@@ -118,7 +118,7 @@ namespace GestionPersonajes{
             Console.WriteLine("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
         }
 
-        public void mostarGanador(Personaje ganador, string nombreApuesta){
+        public static void mostarGanador(Personaje ganador, string nombreApuesta){
             Console.WriteLine($"\nFelicidades! El ganador del torneo es:");
             imprimirPersonaje(ganador);
 
@@ -129,7 +129,7 @@ namespace GestionPersonajes{
             }
         }
 
-        public async Task<List<Personaje>> cargarPersonajes(){
+        public static async Task<List<Personaje>> cargarPersonajes(){
             var personajes = new List<Personaje>();
             FabricaDePersonajes fabrica = new FabricaDePersonajes();
             if(existe("json/PersonajesGuardados.json")){  //Verificar si existen personajes

@@ -12,14 +12,14 @@ namespace Historial{
         public double dmgPromedioPorTurno{get;set;}
         public DateTime fecha{get;set;}
     }
-    public class HistorialJson{
-        public void GuardarGanador(Personaje personaje, string nombreArchivo){
+    public class HistorialJson(){
+        public static void GuardarGanador(Personaje personaje, string nombreArchivo){
             try{
                 List<Partida> historalCompleto = new List<Partida>();
                 Partida partida = new Partida();
                 partida.personaje = personaje;
                 partida.victorias = 1;
-                partida.dmgInfligido= personaje.caracteristicas.dmgInfligido;
+                partida.dmgInfligido = personaje.caracteristicas.dmgInfligido;
                 partida.dmgRecibido = personaje.caracteristicas.dmgRecibido;
                 partida.ratioDeDmg = Math.Round((partida.dmgInfligido/partida.dmgRecibido),2);
                 partida.dmgPromedioPorTurno = Math.Round((partida.dmgInfligido/personaje.caracteristicas.turnosJugados),2);
@@ -45,19 +45,19 @@ namespace Historial{
             }
         }
 
-        public List<Partida> leerGanadores(string nombreArchivo){
+        public static List<Partida> leerGanadores(string nombreArchivo){
             string json = File.ReadAllText("json/"+nombreArchivo+".json");
             var opciones = new JsonSerializerOptions{PropertyNameCaseInsensitive = true};
             return JsonSerializer.Deserialize<List<Partida>>(json, opciones);
         }
 
-        public bool existe(string ruta){
+        public static bool existe(string ruta){
             if (File.Exists(ruta)){
                 return true;
             }else{return false;}
         }
 
-        public void mostrarHistorial(){
+        public static void mostrarHistorial(){
             var ganadores = new List<Partida>();
             try{
                 ganadores = leerGanadores("Historial");   
@@ -71,7 +71,7 @@ namespace Historial{
             }
         }
 
-        private void imprimirPartida(Partida partida, int pos){
+        private static void imprimirPartida(Partida partida, int pos){
             Console.ForegroundColor = ConsoleColor.DarkBlue;
             Console.Write(pos+". ");
             Console.WriteLine(partida.personaje.datos.Nombre+","+partida.personaje.datos.Tipo);

@@ -823,5 +823,505 @@
     "ratioDeDmg": 2.09,
     "dmgPromedioPorTurno": 5.86,
     "fecha": "2024-08-10T17:42:13.5053024-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Fighter",
+        "Nombre": "Vi",
+        "Apodo": "la Vigilante de Pilt\u00F3ver",
+        "fechaNacimiento": "1742-11-05T00:00:00",
+        "Edad": 282
+      },
+      "caracteristicas": {
+        "Velocidad": 2,
+        "Destreza": 4,
+        "Fuerza": 9,
+        "Nivel": 5,
+        "Armadura": 10,
+        "Salud": 110
+      }
+    },
+    "victorias": 4,
+    "dmgInfligido": 449,
+    "dmgRecibido": 183,
+    "ratioDeDmg": 2.45,
+    "dmgPromedioPorTurno": 8.98,
+    "fecha": "2024-08-12T16:37:34.1740188-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Assassin",
+        "Nombre": "Nidalee",
+        "Apodo": "la Cazadora Salvaje",
+        "fechaNacimiento": "1924-04-08T00:00:00",
+        "Edad": 100
+      },
+      "caracteristicas": {
+        "Velocidad": 2,
+        "Destreza": 3,
+        "Fuerza": 6,
+        "Nivel": 9,
+        "Armadura": 10,
+        "Salud": 100
+      }
+    },
+    "victorias": 4,
+    "dmgInfligido": 319,
+    "dmgRecibido": 97,
+    "ratioDeDmg": 3.29,
+    "dmgPromedioPorTurno": 9.11,
+    "fecha": "2024-08-12T16:37:48.446956-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Fighter",
+        "Nombre": "Vi",
+        "Apodo": "la Vigilante de Pilt\u00F3ver",
+        "fechaNacimiento": "1742-11-05T00:00:00",
+        "Edad": 282
+      },
+      "caracteristicas": {
+        "Velocidad": 4,
+        "Destreza": 2,
+        "Fuerza": 6,
+        "Nivel": 3,
+        "Armadura": 10,
+        "Salud": 110
+      }
+    },
+    "victorias": 5,
+    "dmgInfligido": 214,
+    "dmgRecibido": 124,
+    "ratioDeDmg": 1.73,
+    "dmgPromedioPorTurno": 1.55,
+    "fecha": "2024-08-12T16:37:55.9034446-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Marksman",
+        "Nombre": "Aphelios",
+        "Apodo": "El Arma de los Adeptos",
+        "fechaNacimiento": "2015-12-21T00:00:00",
+        "Edad": 9
+      },
+      "caracteristicas": {
+        "Velocidad": 2,
+        "Destreza": 4,
+        "Fuerza": 7,
+        "Nivel": 4,
+        "Armadura": 10,
+        "Salud": 110
+      }
+    },
+    "victorias": 3,
+    "dmgInfligido": 219,
+    "dmgRecibido": 173,
+    "ratioDeDmg": 1.27,
+    "dmgPromedioPorTurno": 4.56,
+    "fecha": "2024-08-12T16:37:55.9469366-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Fighter",
+        "Nombre": "Urgot",
+        "Apodo": "el Temerario",
+        "fechaNacimiento": "1948-10-01T00:00:00",
+        "Edad": 76
+      },
+      "caracteristicas": {
+        "Velocidad": 2,
+        "Destreza": 3,
+        "Fuerza": 6,
+        "Nivel": 8,
+        "Armadura": 10,
+        "Salud": 110
+      }
+    },
+    "victorias": 3,
+    "dmgInfligido": 327,
+    "dmgRecibido": 122,
+    "ratioDeDmg": 2.68,
+    "dmgPromedioPorTurno": 6.29,
+    "fecha": "2024-08-12T16:40:12.5813361-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Mage",
+        "Nombre": "Brand",
+        "Apodo": "la Venganza Ardiente",
+        "fechaNacimiento": "1731-04-24T00:00:00",
+        "Edad": 293
+      },
+      "caracteristicas": {
+        "Velocidad": 7,
+        "Destreza": 4,
+        "Fuerza": 6,
+        "Nivel": 9,
+        "Armadura": 10,
+        "Salud": 100
+      }
+    },
+    "victorias": 2,
+    "dmgInfligido": 362,
+    "dmgRecibido": 115,
+    "ratioDeDmg": 3.15,
+    "dmgPromedioPorTurno": 12.48,
+    "fecha": "2024-08-12T16:40:17.7448062-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Assassin",
+        "Nombre": "Qiyana",
+        "Apodo": "La Emperatriz de los Elementos",
+        "fechaNacimiento": "1990-03-28T00:00:00",
+        "Edad": 34
+      },
+      "caracteristicas": {
+        "Velocidad": 6,
+        "Destreza": 2,
+        "Fuerza": 9,
+        "Nivel": 1,
+        "Armadura": 10,
+        "Salud": 100
+      }
+    },
+    "victorias": 3,
+    "dmgInfligido": 100,
+    "dmgRecibido": 9,
+    "ratioDeDmg": 11.11,
+    "dmgPromedioPorTurno": 0.56,
+    "fecha": "2024-08-12T16:40:17.7631189-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Assassin",
+        "Nombre": "Qiyana",
+        "Apodo": "La Emperatriz de los Elementos",
+        "fechaNacimiento": "1990-03-28T00:00:00",
+        "Edad": 34
+      },
+      "caracteristicas": {
+        "Velocidad": 3,
+        "Destreza": 4,
+        "Fuerza": 8,
+        "Nivel": 9,
+        "Armadura": 10,
+        "Salud": 100
+      }
+    },
+    "victorias": 4,
+    "dmgInfligido": 504,
+    "dmgRecibido": 106,
+    "ratioDeDmg": 4.75,
+    "dmgPromedioPorTurno": 14.82,
+    "fecha": "2024-08-12T16:40:22.1098814-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Assassin",
+        "Nombre": "Qiyana",
+        "Apodo": "La Emperatriz de los Elementos",
+        "fechaNacimiento": "1990-03-28T00:00:00",
+        "Edad": 34
+      },
+      "caracteristicas": {
+        "Velocidad": 8,
+        "Destreza": 3,
+        "Fuerza": 5,
+        "Nivel": 8,
+        "Armadura": 10,
+        "Salud": 110
+      }
+    },
+    "victorias": 5,
+    "dmgInfligido": 224,
+    "dmgRecibido": 43,
+    "ratioDeDmg": 5.21,
+    "dmgPromedioPorTurno": 5.6,
+    "fecha": "2024-08-12T16:40:26.309607-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Assassin",
+        "Nombre": "Nidalee",
+        "Apodo": "la Cazadora Salvaje",
+        "fechaNacimiento": "1924-04-08T00:00:00",
+        "Edad": 100
+      },
+      "caracteristicas": {
+        "Velocidad": 4,
+        "Destreza": 2,
+        "Fuerza": 9,
+        "Nivel": 4,
+        "Armadura": 2,
+        "Salud": 110
+      }
+    },
+    "victorias": 5,
+    "dmgInfligido": 104,
+    "dmgRecibido": 88,
+    "ratioDeDmg": 1.18,
+    "dmgPromedioPorTurno": 3.59,
+    "fecha": "2024-08-12T16:40:26.3290156-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Fighter",
+        "Nombre": "Vi",
+        "Apodo": "la Vigilante de Pilt\u00F3ver",
+        "fechaNacimiento": "1742-11-05T00:00:00",
+        "Edad": 282
+      },
+      "caracteristicas": {
+        "Velocidad": 9,
+        "Destreza": 2,
+        "Fuerza": 8,
+        "Nivel": 2,
+        "Armadura": 4,
+        "Salud": 110
+      }
+    },
+    "victorias": 6,
+    "dmgInfligido": 103,
+    "dmgRecibido": 56,
+    "ratioDeDmg": 1.84,
+    "dmgPromedioPorTurno": 1.69,
+    "fecha": "2024-08-12T16:40:26.339173-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Assassin",
+        "Nombre": "Nidalee",
+        "Apodo": "la Cazadora Salvaje",
+        "fechaNacimiento": "1924-04-08T00:00:00",
+        "Edad": 100
+      },
+      "caracteristicas": {
+        "Velocidad": 5,
+        "Destreza": 4,
+        "Fuerza": 9,
+        "Nivel": 5,
+        "Armadura": 4,
+        "Salud": 110
+      }
+    },
+    "victorias": 6,
+    "dmgInfligido": 230,
+    "dmgRecibido": 109,
+    "ratioDeDmg": 2.11,
+    "dmgPromedioPorTurno": 8.85,
+    "fecha": "2024-08-12T16:48:14.9091755-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Marksman",
+        "Nombre": "Aphelios",
+        "Apodo": "El Arma de los Adeptos",
+        "fechaNacimiento": "2015-12-21T00:00:00",
+        "Edad": 9
+      },
+      "caracteristicas": {
+        "Velocidad": 5,
+        "Destreza": 3,
+        "Fuerza": 6,
+        "Nivel": 5,
+        "Armadura": 4,
+        "Salud": 110
+      }
+    },
+    "victorias": 4,
+    "dmgInfligido": 105,
+    "dmgRecibido": 78,
+    "ratioDeDmg": 1.35,
+    "dmgPromedioPorTurno": 5.53,
+    "fecha": "2024-08-12T16:48:19.6813183-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Fighter",
+        "Nombre": "Urgot",
+        "Apodo": "el Temerario",
+        "fechaNacimiento": "1948-10-01T00:00:00",
+        "Edad": 76
+      },
+      "caracteristicas": {
+        "Velocidad": 2,
+        "Destreza": 4,
+        "Fuerza": 1,
+        "Nivel": 6,
+        "Armadura": 10,
+        "Salud": 100
+      }
+    },
+    "victorias": 4,
+    "dmgInfligido": 101,
+    "dmgRecibido": 29,
+    "ratioDeDmg": 3.48,
+    "dmgPromedioPorTurno": 0.91,
+    "fecha": "2024-08-12T16:48:19.6997255-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Mage",
+        "Nombre": "Syndra",
+        "Apodo": "la Soberana Oscura",
+        "fechaNacimiento": "1770-05-01T00:00:00",
+        "Edad": 254
+      },
+      "caracteristicas": {
+        "Velocidad": 2,
+        "Destreza": 4,
+        "Fuerza": 6,
+        "Nivel": 8,
+        "Armadura": 8,
+        "Salud": 110
+      }
+    },
+    "victorias": 3,
+    "dmgInfligido": 124,
+    "dmgRecibido": 51,
+    "ratioDeDmg": 2.43,
+    "dmgPromedioPorTurno": 11.27,
+    "fecha": "2024-08-12T16:48:19.7097987-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Tank",
+        "Nombre": "Rell",
+        "Apodo": "la Doncella de Hierro",
+        "fechaNacimiento": "1962-10-26T00:00:00",
+        "Edad": 62
+      },
+      "caracteristicas": {
+        "Velocidad": 9,
+        "Destreza": 2,
+        "Fuerza": 5,
+        "Nivel": 6,
+        "Armadura": 7,
+        "Salud": 110
+      }
+    },
+    "victorias": 2,
+    "dmgInfligido": 101,
+    "dmgRecibido": 94,
+    "ratioDeDmg": 1.07,
+    "dmgPromedioPorTurno": 2.59,
+    "fecha": "2024-08-12T16:48:19.7183553-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Fighter",
+        "Nombre": "Volibear",
+        "Apodo": "la Tormenta Implacable",
+        "fechaNacimiento": "1873-03-26T00:00:00",
+        "Edad": 151
+      },
+      "caracteristicas": {
+        "Velocidad": 7,
+        "Destreza": 1,
+        "Fuerza": 7,
+        "Nivel": 9,
+        "Armadura": 10,
+        "Salud": 100
+      }
+    },
+    "victorias": 2,
+    "dmgInfligido": 106,
+    "dmgRecibido": 46,
+    "ratioDeDmg": 2.3,
+    "dmgPromedioPorTurno": 3.21,
+    "fecha": "2024-08-12T16:48:19.7269789-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Assassin",
+        "Nombre": "Nidalee",
+        "Apodo": "la Cazadora Salvaje",
+        "fechaNacimiento": "1924-04-08T00:00:00",
+        "Edad": 100
+      },
+      "caracteristicas": {
+        "Velocidad": 5,
+        "Destreza": 3,
+        "Fuerza": 9,
+        "Nivel": 6,
+        "Armadura": 10,
+        "Salud": 110
+      }
+    },
+    "victorias": 7,
+    "dmgInfligido": 343,
+    "dmgRecibido": 130,
+    "ratioDeDmg": 2.64,
+    "dmgPromedioPorTurno": 7.46,
+    "fecha": "2024-08-12T16:48:25.906861-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Tank",
+        "Nombre": "Rell",
+        "Apodo": "la Doncella de Hierro",
+        "fechaNacimiento": "1962-10-26T00:00:00",
+        "Edad": 62
+      },
+      "caracteristicas": {
+        "Velocidad": 3,
+        "Destreza": 4,
+        "Fuerza": 8,
+        "Nivel": 7,
+        "Armadura": 10,
+        "Salud": 110
+      }
+    },
+    "victorias": 3,
+    "dmgInfligido": 366,
+    "dmgRecibido": 46,
+    "ratioDeDmg": 7.96,
+    "dmgPromedioPorTurno": 13.56,
+    "fecha": "2024-08-12T16:48:30.1124116-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Assassin",
+        "Nombre": "Qiyana",
+        "Apodo": "La Emperatriz de los Elementos",
+        "fechaNacimiento": "1990-03-28T00:00:00",
+        "Edad": 34
+      },
+      "caracteristicas": {
+        "Velocidad": 6,
+        "Destreza": 3,
+        "Fuerza": 4,
+        "Nivel": 9,
+        "Armadura": 10,
+        "Salud": 100
+      }
+    },
+    "victorias": 6,
+    "dmgInfligido": 111,
+    "dmgRecibido": 39,
+    "ratioDeDmg": 2.85,
+    "dmgPromedioPorTurno": 5.84,
+    "fecha": "2024-08-12T16:48:30.133306-03:00"
   }
 ]

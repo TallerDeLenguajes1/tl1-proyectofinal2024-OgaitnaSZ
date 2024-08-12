@@ -16,6 +16,7 @@ namespace Creador {
     public class FabricaDePersonajes {
         Random random = new Random();
 
+        //Funcion para cargar 10 personajes
         public async Task<List<Personaje>> cargarPersonajes() {
             List<Identidad> datosList = await ObtenerDatosDeAPI();
             var personajes = new List<Personaje>();
@@ -40,7 +41,6 @@ namespace Creador {
             }
             return personajes;
         }
-
         public async Task<List<Identidad>> ObtenerDatosDeAPI() {
             using var httpClient = new HttpClient();
             var url = "https://ddragon.leagueoflegends.com/cdn/12.1.1/data/es_MX/champion.json";
@@ -49,6 +49,7 @@ namespace Creador {
             var campeones = json.RootElement.GetProperty("data");
 
             var listaDatos = new List<Identidad>();
+            
             foreach (var campeon in campeones.EnumerateObject()) {
                 var nombre = campeon.Value.GetProperty("name").GetString();
                 var titulo = campeon.Value.GetProperty("title").GetString();
