@@ -30,3 +30,5 @@ c:\Users\santi\Desktop\taller1\tps\ProyectoFinal\tl1-proyectofinal2024-OgaitnaSZ
 c:\Users\santi\Desktop\taller1\tps\ProyectoFinal\tl1-proyectofinal2024-OgaitnaSZ\obj\Debug\net8.0\ref\ProyectoFinal.dll
 c:\Users\santi\Desktop\taller1\tps\ProyectoFinal\tl1-proyectofinal2024-OgaitnaSZ\bin\Debug\net8.0\json\Historial.json
 c:\Users\santi\Desktop\taller1\tps\ProyectoFinal\tl1-proyectofinal2024-OgaitnaSZ\bin\Debug\net8.0\json\PersonajesGuardados.json
+C:\Users\santi\OneDrive\Desktop\ProyectoFinal\tl1-proyectofinal2024-OgaitnaSZ\bin\Debug\net8.0\json\Historial.json
+C:\Users\santi\OneDrive\Desktop\ProyectoFinal\tl1-proyectofinal2024-OgaitnaSZ\bin\Debug\net8.0\json\PersonajesGuardados.json

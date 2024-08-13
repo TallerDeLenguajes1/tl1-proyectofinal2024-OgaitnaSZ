@@ -108,7 +108,10 @@ namespace GestionPersonajes{
 
             int maxLineas = Math.Max(datos.Length, caracteristicas.Length);
 
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
             Console.WriteLine(personaje.datos.Nombre+", "+personaje.datos.Apodo);
+            Console.ResetColor();
+
             for (int i = 0; i < maxLineas; i++){
                 string datosLinea = i < datos.Length ? datos[i] : "";
                 string caracteristicasLinea = i < caracteristicas.Length ? caracteristicas[i] : "";

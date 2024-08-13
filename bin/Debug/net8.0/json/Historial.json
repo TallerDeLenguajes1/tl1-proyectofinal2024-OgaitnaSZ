@@ -1273,5 +1273,105 @@
     "ratioDeDmg": 2.64,
     "dmgPromedioPorTurno": 7.46,
     "fecha": "2024-08-12T16:48:25.906861-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Tank",
+        "Nombre": "Rell",
+        "Apodo": "la Doncella de Hierro",
+        "fechaNacimiento": "1962-10-26T00:00:00",
+        "Edad": 62
+      },
+      "caracteristicas": {
+        "Velocidad": 3,
+        "Destreza": 4,
+        "Fuerza": 8,
+        "Nivel": 7,
+        "Armadura": 10,
+        "Salud": 110
+      }
+    },
+    "victorias": 3,
+    "dmgInfligido": 366,
+    "dmgRecibido": 46,
+    "ratioDeDmg": 7.96,
+    "dmgPromedioPorTurno": 13.56,
+    "fecha": "2024-08-12T16:48:30.1124116-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Assassin",
+        "Nombre": "Qiyana",
+        "Apodo": "La Emperatriz de los Elementos",
+        "fechaNacimiento": "1990-03-28T00:00:00",
+        "Edad": 34
+      },
+      "caracteristicas": {
+        "Velocidad": 6,
+        "Destreza": 3,
+        "Fuerza": 4,
+        "Nivel": 9,
+        "Armadura": 10,
+        "Salud": 100
+      }
+    },
+    "victorias": 6,
+    "dmgInfligido": 111,
+    "dmgRecibido": 39,
+    "ratioDeDmg": 2.85,
+    "dmgPromedioPorTurno": 5.84,
+    "fecha": "2024-08-12T16:48:30.133306-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Fighter",
+        "Nombre": "Volibear",
+        "Apodo": "la Tormenta Implacable",
+        "fechaNacimiento": "1873-03-26T00:00:00",
+        "Edad": 151
+      },
+      "caracteristicas": {
+        "Velocidad": 2,
+        "Destreza": 4,
+        "Fuerza": 8,
+        "Nivel": 8,
+        "Armadura": 10,
+        "Salud": 110
+      }
+    },
+    "victorias": 3,
+    "dmgInfligido": 477,
+    "dmgRecibido": 104,
+    "ratioDeDmg": 4.59,
+    "dmgPromedioPorTurno": 15.39,
+    "fecha": "2024-08-13T15:04:26.5473363-03:00"
+  },
+  {
+    "personaje": {
+      "datos": {
+        "Tipo": "Mage",
+        "Nombre": "Syndra",
+        "Apodo": "la Soberana Oscura",
+        "fechaNacimiento": "1770-05-01T00:00:00",
+        "Edad": 254
+      },
+      "caracteristicas": {
+        "Velocidad": 4,
+        "Destreza": 4,
+        "Fuerza": 6,
+        "Nivel": 8,
+        "Armadura": 10,
+        "Salud": 110
+      }
+    },
+    "victorias": 4,
+    "dmgInfligido": 559,
+    "dmgRecibido": 276,
+    "ratioDeDmg": 2.03,
+    "dmgPromedioPorTurno": 8.22,
+    "fecha": "2024-08-13T15:04:35.1634565-03:00"
   }
 ]

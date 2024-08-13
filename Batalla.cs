@@ -30,7 +30,7 @@ namespace Batalla{
                 Console.ForegroundColor = ConsoleColor.DarkBlue;
                 Console.WriteLine("\n━━━━━ Ronda "+ ronda +": "+ personaje1.datos.Nombre+" VS "+personaje2.datos.Nombre + " ━━━━━");
                 Console.ResetColor();
-                //Thread.Sleep(3000); //Agregar delay entre enfrentamientos
+                Thread.Sleep(3000); //Agregar delay entre enfrentamientos
 
                 Combatir(personaje1, personaje2); //Se enfrentan dos personajes hasta que gane uno
                 
@@ -81,7 +81,7 @@ namespace Batalla{
                 Console.ForegroundColor = ConsoleColor.DarkBlue;
                 Console.WriteLine("\n━━━━━ "+ personaje1.datos.Nombre+"(Equipo 1) VS "+personaje2.datos.Nombre + "(Equipo 2) ━━━━━");
                 Console.ResetColor();
-                //Thread.Sleep(3000); //Agregar delay entre enfrentamientos
+                Thread.Sleep(3000); //Agregar delay entre enfrentamientos
 
                 Combatir(personaje1, personaje2);  //Se enfrentan dos personajes hasta que gane uno
                 
@@ -141,7 +141,7 @@ namespace Batalla{
             Console.WriteLine("─────────────────────────────────────");
             personaje1.caracteristicas.turnosJugados++;
             personaje2.caracteristicas.turnosJugados++;
-            //Thread.Sleep(1000); //Agregar delay entre turnos
+            Thread.Sleep(1000); //Agregar delay entre turnos
         }
         public static void AsignarCaracteristicas(List<Personaje> personajes){
             FabricaDePersonajes fab = new();
@@ -168,8 +168,7 @@ namespace Batalla{
             }
         }
         public static void publicarEquipoGanador(List<Personaje> equipo, string nombreEquipo){
-            Console.WriteLine($"━━━━━━ Equipo {nombreEquipo} Ganador ━━━━━━");
-            Console.WriteLine("Los integrantes en pie del equipo son:");
+            Mensajes.equipoGanador(nombreEquipo);
             foreach(Personaje personaje in equipo){
                 PersonajesJson.imprimirPersonaje(personaje);
                 if(personaje.caracteristicas.dmgRecibido  == 0 ){

@@ -68,5 +68,11 @@ namespace MensajesProyecto {
             Console.ResetColor();
             Console.WriteLine(perdedor.datos.Nombre+" queda fuera");
         }
+        public static void equipoGanador(string nombreEquipo){
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine($"━━━━━━ Equipo {nombreEquipo} Ganador ━━━━━━");
+            Console.ResetColor();
+            Console.WriteLine("Los integrantes en pie del equipo son:");
+        }
     }
 }
