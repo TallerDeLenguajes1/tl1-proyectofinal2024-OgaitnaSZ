@@ -23,7 +23,7 @@ En el modo por equipos, los 10 campeones seleccionados se dividen aleatoriamente
 Los personajes que ocupan la misma posición en cada equipo se enfrentan entre sí. Hasta que un equipo elimine a todos los miembros del equipo contrario.
 
 ## Funcionamiento del Juego
-###Selección de Campeones
+### Selección de Campeones
 El juego utiliza un algoritmo para seleccionar aleatoriamente a 10 campeones de una API de personajes de League of Legends. 
 La selección es completamente aleatoria, lo que garantiza que cada partida sea única y ofrezca una experiencia de juego diferente.
 
