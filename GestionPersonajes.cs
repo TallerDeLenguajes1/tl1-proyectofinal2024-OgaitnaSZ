@@ -6,12 +6,16 @@ using Creador;
 namespace GestionPersonajes{
     public class PersonajesJson(){
         public static void guardarPersonajes(List<Personaje> personaje, string nombreArchivo){
-            try{
-                string jsonString = JsonSerializer.Serialize(personaje, new JsonSerializerOptions { WriteIndented = true });
-                File.WriteAllText("json/"+nombreArchivo+".json", jsonString);
-                Console.WriteLine("Personajes guardados correctamente");
-            }catch{
-                Console.WriteLine("No se pudieron guardar los personajes");
+            if(personaje.Count()>1){
+                try{
+                    string jsonString = JsonSerializer.Serialize(personaje, new JsonSerializerOptions { WriteIndented = true });
+                    File.WriteAllText("json/"+nombreArchivo+".json", jsonString);
+                    Console.WriteLine("Personajes guardados correctamente");
+                }catch{
+                    Console.WriteLine("No se pudieron guardar los personajes");
+                }
+            }else{
+                Console.WriteLine("La lista de personajes esta vacia");
             }
         }
         public static List<Personaje> leerPersonajes(string nombreArchivo){

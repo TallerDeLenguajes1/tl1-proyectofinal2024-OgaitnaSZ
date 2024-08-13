@@ -15,7 +15,7 @@ while(control){
         case 1:
             var personajes = await PersonajesJson.cargarPersonajes();  //Cargar lista de personajes
 
-            while(control){
+            while(control && personajes.Count > 1){
                 Mensajes.modoDeJuego();  //Seleccion de modo de juego
 
                 while(control2){
