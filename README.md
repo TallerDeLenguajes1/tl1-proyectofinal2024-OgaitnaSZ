@@ -72,4 +72,5 @@ El proyecto esta aun en desarrollo, pero hay cambios planeados para la próxima 
 - **Resumen corto de campeones:** Próximamente se agregara un resumen corto de cada campeón al momento de presentarlos.
 - **Nombres en equipos:** Se agregaran nombres aleatorios a los equipos, para una experiencia mas divertida.
 - **Selección con teclado:** Las opciones podrán ser elegidas utilizando las flechas del teclado, para mejorar la experiencia de usuario.
+- **Cambios de personajes:** Se implementará una opción para seleccionar otros 10 personajes de manera aleatoria.
 - **Mejoras visuales:** Se implementaran mejoras en colores y diseño.
